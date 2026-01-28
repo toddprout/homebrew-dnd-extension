@@ -1,0 +1,236 @@
+{
+  "name": "Mounts & Vehicles",
+  "description": "Mounts, vehicles, tack, harness, and drawn vehicles from the SRD",
+  "items": [
+    {
+      "name": "Camel",
+      "type": "Mount",
+      "cost": "50 gp",
+      "speed": "50 ft.",
+      "carrying_capacity": "480 lb.",
+      "description": "A desert mount known for endurance. Can go long periods without water."
+    },
+    {
+      "name": "Donkey",
+      "type": "Mount",
+      "cost": "8 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "420 lb.",
+      "description": "A sturdy beast of burden, slower but reliable."
+    },
+    {
+      "name": "Mule",
+      "type": "Mount",
+      "cost": "8 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "420 lb.",
+      "description": "A hybrid of horse and donkey, known for stubbornness and sure-footedness."
+    },
+    {
+      "name": "Elephant",
+      "type": "Mount",
+      "cost": "200 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "1,320 lb.",
+      "description": "A massive mount used in exotic lands. Requires special training to ride."
+    },
+    {
+      "name": "Draft Horse",
+      "type": "Mount",
+      "cost": "50 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "540 lb.",
+      "description": "A large horse bred for heavy labor and pulling vehicles."
+    },
+    {
+      "name": "Riding Horse",
+      "type": "Mount",
+      "cost": "75 gp",
+      "speed": "60 ft.",
+      "carrying_capacity": "480 lb.",
+      "description": "A standard horse suitable for travel and light riding."
+    },
+    {
+      "name": "Warhorse",
+      "type": "Mount",
+      "cost": "400 gp",
+      "speed": "60 ft.",
+      "carrying_capacity": "540 lb.",
+      "description": "A horse trained for combat. Will not flee from battle and can attack."
+    },
+    {
+      "name": "Mastiff",
+      "type": "Mount",
+      "cost": "25 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "195 lb.",
+      "description": "A large dog that can serve as a mount for Small creatures or as a guard animal."
+    },
+    {
+      "name": "Pony",
+      "type": "Mount",
+      "cost": "30 gp",
+      "speed": "40 ft.",
+      "carrying_capacity": "225 lb.",
+      "description": "A smaller horse suitable for Small riders or as a pack animal."
+    },
+    {
+      "name": "Barding",
+      "type": "Tack & Harness",
+      "cost": "×4",
+      "weight": "×2",
+      "description": "Armor for a mount. Cost and weight are multiplied from the base armor type. Barding takes twice as long to put on as normal armor."
+    },
+    {
+      "name": "Bit and Bridle",
+      "type": "Tack & Harness",
+      "cost": "2 gp",
+      "weight": 1,
+      "description": "Essential equipment for controlling a mount."
+    },
+    {
+      "name": "Carriage",
+      "type": "Vehicle (Land)",
+      "cost": "100 gp",
+      "weight": 600,
+      "description": "An enclosed four-wheeled vehicle pulled by horses. Can carry passengers in comfort."
+    },
+    {
+      "name": "Cart",
+      "type": "Vehicle (Land)",
+      "cost": "15 gp",
+      "weight": 200,
+      "description": "A simple two-wheeled vehicle for transporting goods. Pulled by a single draft animal."
+    },
+    {
+      "name": "Chariot",
+      "type": "Vehicle (Land)",
+      "cost": "250 gp",
+      "weight": 100,
+      "description": "A two-wheeled vehicle designed for speed and combat. Pulled by horses."
+    },
+    {
+      "name": "Animal Feed (1 day)",
+      "type": "Tack & Harness",
+      "cost": "5 cp",
+      "weight": 10,
+      "description": "Feed for a horse or similar mount for one day."
+    },
+    {
+      "name": "Saddle, Exotic",
+      "type": "Tack & Harness",
+      "cost": "60 gp",
+      "weight": 40,
+      "description": "A specialized saddle for unusual mounts such as aquatic or flying creatures."
+    },
+    {
+      "name": "Saddle, Military",
+      "type": "Tack & Harness",
+      "cost": "20 gp",
+      "weight": 30,
+      "description": "A saddle that braces the rider, giving advantage on checks to remain mounted."
+    },
+    {
+      "name": "Saddle, Pack",
+      "type": "Tack & Harness",
+      "cost": "5 gp",
+      "weight": 15,
+      "description": "A saddle designed for carrying equipment rather than a rider."
+    },
+    {
+      "name": "Saddle, Riding",
+      "type": "Tack & Harness",
+      "cost": "10 gp",
+      "weight": 25,
+      "description": "A standard saddle for riding a mount."
+    },
+    {
+      "name": "Saddlebags",
+      "type": "Tack & Harness",
+      "cost": "4 gp",
+      "weight": 8,
+      "description": "Bags that attach to a saddle for carrying equipment."
+    },
+    {
+      "name": "Sled",
+      "type": "Vehicle (Land)",
+      "cost": "20 gp",
+      "weight": 300,
+      "description": "A vehicle for traveling over snow and ice, pulled by dogs or similar animals."
+    },
+    {
+      "name": "Stabling (1 day)",
+      "type": "Tack & Harness",
+      "cost": "5 sp",
+      "weight": 0,
+      "description": "The cost of stabling a mount at a stable for one day, including food and care."
+    },
+    {
+      "name": "Wagon",
+      "type": "Vehicle (Land)",
+      "cost": "35 gp",
+      "weight": 400,
+      "description": "A four-wheeled vehicle for transporting heavy loads. Requires draft animals to pull."
+    },
+    {
+      "name": "Galley",
+      "type": "Vehicle (Water)",
+      "cost": "30,000 gp",
+      "speed": "4 mph",
+      "crew": 80,
+      "passengers": 0,
+      "cargo": "150 tons",
+      "description": "A large ship propelled by sails and oars. Often used for war or trade."
+    },
+    {
+      "name": "Keelboat",
+      "type": "Vehicle (Water)",
+      "cost": "3,000 gp",
+      "speed": "1 mph",
+      "crew": 1,
+      "passengers": 6,
+      "cargo": "0.5 tons",
+      "description": "A small riverboat with a pointed bow, suitable for inland waterways."
+    },
+    {
+      "name": "Longship",
+      "type": "Vehicle (Water)",
+      "cost": "10,000 gp",
+      "speed": "3 mph",
+      "crew": 40,
+      "passengers": 150,
+      "cargo": "10 tons",
+      "description": "A long, narrow ship designed for speed and raiding. Can navigate shallow waters."
+    },
+    {
+      "name": "Rowboat",
+      "type": "Vehicle (Water)",
+      "cost": "50 gp",
+      "speed": "1.5 mph",
+      "crew": 1,
+      "passengers": 3,
+      "cargo": "—",
+      "description": "A small boat propelled by oars. Suitable for crossing rivers or short distances."
+    },
+    {
+      "name": "Sailing Ship",
+      "type": "Vehicle (Water)",
+      "cost": "10,000 gp",
+      "speed": "2 mph",
+      "crew": 20,
+      "passengers": 20,
+      "cargo": "100 tons",
+      "description": "A large merchant vessel with sails for long ocean voyages."
+    },
+    {
+      "name": "Warship",
+      "type": "Vehicle (Water)",
+      "cost": "25,000 gp",
+      "speed": "2.5 mph",
+      "crew": 60,
+      "passengers": 60,
+      "cargo": "200 tons",
+      "description": "A heavily armed naval vessel designed for combat at sea."
+    }
+  ]
+}

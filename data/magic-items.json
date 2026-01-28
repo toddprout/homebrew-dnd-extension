@@ -1,0 +1,1442 @@
+{
+  "name": "Magic Items",
+  "description": "Magical items from the SRD, organized by rarity",
+  "items": [
+    {
+      "name": "Ammunition, +1",
+      "type": "Weapon (any ammunition)",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    },
+    {
+      "name": "Ammunition, +2",
+      "type": "Weapon (any ammunition)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    },
+    {
+      "name": "Ammunition, +3",
+      "type": "Weapon (any ammunition)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    },
+    {
+      "name": "Amulet of Proof Against Detection and Location",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors."
+    },
+    {
+      "name": "Amulet of the Planes",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a success, you cast plane shift. On a failure, you and each creature and object within 15 feet travel to a random destination."
+    },
+    {
+      "name": "Animated Shield",
+      "type": "Armor (shield)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die."
+    },
+    {
+      "name": "Armor, +1",
+      "type": "Armor (light, medium, or heavy)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You have a +1 bonus to AC while wearing this armor."
+    },
+    {
+      "name": "Armor, +2",
+      "type": "Armor (light, medium, or heavy)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "You have a +2 bonus to AC while wearing this armor."
+    },
+    {
+      "name": "Armor, +3",
+      "type": "Armor (light, medium, or heavy)",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "You have a +3 bonus to AC while wearing this armor."
+    },
+    {
+      "name": "Armor of Invulnerability",
+      "type": "Armor (plate)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn."
+    },
+    {
+      "name": "Armor of Resistance",
+      "type": "Armor (light, medium, or heavy)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder."
+    },
+    {
+      "name": "Armor of Vulnerability",
+      "type": "Armor (plate)",
+      "rarity": "Rare",
+      "attunement": true,
+      "cursed": true,
+      "description": "While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. Curse: This armor is cursed. You have vulnerability to two of the three damage types (DM's choice)."
+    },
+    {
+      "name": "Arrow of Slaying",
+      "type": "Weapon (arrow)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. If a creature belonging to the type associated with the arrow takes damage from it, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one."
+    },
+    {
+      "name": "Bag of Holding",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This bag has an interior space considerably larger than its outside dimensions—roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. Retrieving an item requires an action. If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane."
+    },
+    {
+      "name": "Bag of Tricks",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature determined by the bag's color."
+    },
+    {
+      "name": "Belt of Dwarvenkind",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing this belt, you gain: +2 to Constitution (max 20), advantage on Charisma (Persuasion) checks with dwarves, advantage on saves vs. poison, resistance to poison damage, darkvision 60 ft., and you can speak, read, and write Dwarvish. You also have a 50% chance each day at dawn of growing a full beard if capable."
+    },
+    {
+      "name": "Belt of Giant Strength (Hill)",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing this belt, your Strength score changes to 21. If your Strength is already 21 or higher, the belt has no effect on you."
+    },
+    {
+      "name": "Belt of Giant Strength (Stone/Frost)",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this belt, your Strength score changes to 23. If your Strength is already 23 or higher, the belt has no effect on you."
+    },
+    {
+      "name": "Belt of Giant Strength (Fire)",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this belt, your Strength score changes to 25. If your Strength is already 25 or higher, the belt has no effect on you."
+    },
+    {
+      "name": "Belt of Giant Strength (Cloud)",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While wearing this belt, your Strength score changes to 27. If your Strength is already 27 or higher, the belt has no effect on you."
+    },
+    {
+      "name": "Belt of Giant Strength (Storm)",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While wearing this belt, your Strength score changes to 29. If your Strength is already 29 or higher, the belt has no effect on you."
+    },
+    {
+      "name": "Boots of Elvenkind",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
+    },
+    {
+      "name": "Boots of Levitation",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While you wear these boots, you can use an action to cast the levitate spell on yourself at will."
+    },
+    {
+      "name": "Boots of Speed",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While you wear these boots, you can use a bonus action to click the boots' heels together. If you do, the boots double your walking speed for 10 minutes. When the property has been used, it can't be used again until the next dawn."
+    },
+    {
+      "name": "Boots of Striding and Springing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance."
+    },
+    {
+      "name": "Boots of the Winterlands",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "These furred boots are snug and feel quite warm. While you wear them, you gain resistance to cold damage and ignore difficult terrain created by ice or snow. You can tolerate temperatures as low as -50° F without any additional protection."
+    },
+    {
+      "name": "Bracers of Archery",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+    },
+    {
+      "name": "Bracers of Defense",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield."
+    },
+    {
+      "name": "Brooch of Shielding",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
+    },
+    {
+      "name": "Broom of Flying",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This wooden broom functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds."
+    },
+    {
+      "name": "Cape of the Mountebank",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This cape smells faintly of brimstone. While wearing it, you can use it to cast the dimension door spell as an action. This property of the cape can't be used again until the next dawn. When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud at your destination."
+    },
+    {
+      "name": "Carpet of Flying",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions if you are within 30 feet of it. A 6 ft. × 9 ft. carpet can carry up to 800 pounds with a flying speed of 40 feet."
+    },
+    {
+      "name": "Cloak of Displacement",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn."
+    },
+    {
+      "name": "Cloak of Elvenkind",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you."
+    },
+    {
+      "name": "Cloak of Protection",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "You gain a +1 bonus to AC and saving throws while you wear this cloak."
+    },
+    {
+      "name": "Cloak of the Bat",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In dim light or darkness, you can grip the edges of the cloak with both hands and fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying, or if you are in bright light, you lose this flying speed."
+    },
+    {
+      "name": "Cloak of the Manta Ray",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
+    },
+    {
+      "name": "Crystal Ball",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This crystal ball is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it."
+    },
+    {
+      "name": "Cube of Force",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges and regains 1d20 charges daily at dawn. You can press one of the cube's faces as an action, expending charges to create a barrier."
+    },
+    {
+      "name": "Dagger of Venom",
+      "type": "Weapon (dagger)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. Once used, this property can't be used again until the next dawn."
+    },
+    {
+      "name": "Dancing Sword",
+      "type": "Weapon (any sword)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it using your attack bonus. On the fourth round, it returns to your hand."
+    },
+    {
+      "name": "Decanter of Endless Water",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This stoppered flask sloshes when shaken. You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh or salt water pours out: 'Stream' (1 gallon), 'Fountain' (5 gallons), or 'Geyser' (30 gallons in a 30-foot line)."
+    },
+    {
+      "name": "Deck of Illusions",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This box contains a set of parchment cards. A full deck has 34 cards. When you draw a card and throw it, an illusion of a creature forms over the thrown card and remains until dispelled."
+    },
+    {
+      "name": "Deck of Many Things",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most (75%) of these decks have only 13 cards, but the rest have 22. Before you draw a card, you must declare how many cards you intend to draw and then draw them randomly. Any cards drawn in excess have no effect."
+    },
+    {
+      "name": "Defender",
+      "type": "Weapon (any sword)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. The first time you attack with the sword on each of your turns, you can transfer some or all of the sword's bonus to your AC instead. This adjustment remains in effect until the start of your next turn."
+    },
+    {
+      "name": "Demon Armor",
+      "type": "Armor (plate)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "cursed": true,
+      "description": "While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes into magic weapons that deal slashing damage with a +1 bonus and deal 1d8 damage. Curse: Once you don this cursed armor, you can't doff it unless targeted by remove curse or similar magic."
+    },
+    {
+      "name": "Dimensional Shackles",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit any Small to Large creature. In addition to restraining the creature, the shackles prevent it from using any method of extradimensional movement."
+    },
+    {
+      "name": "Dragon Scale Mail",
+      "type": "Armor (scale mail)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this armor, you gain a +1 bonus to AC, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type determined by the kind of dragon that provided the scales."
+    },
+    {
+      "name": "Dragon Slayer",
+      "type": "Weapon (any sword)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type."
+    },
+    {
+      "name": "Dust of Disappearance",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "Found in a small packet, this powder resembles very fine sand. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects."
+    },
+    {
+      "name": "Dust of Dryness",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the water was. Dropping the pellet on the ground shatters it, releasing the absorbed water."
+    },
+    {
+      "name": "Dwarven Plate",
+      "type": "Armor (plate)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "While wearing this armor, you gain a +2 bonus to AC. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet."
+    },
+    {
+      "name": "Dwarven Thrower",
+      "type": "Weapon (warhammer)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a dwarf",
+      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a range of 20/60, and when you hit with a ranged attack using this weapon, it deals an extra 1d8 damage (or 2d8 against giants). Immediately after the attack, the weapon flies back to your hand."
+    },
+    {
+      "name": "Efficient Quiver",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "Each of the quiver's three compartments connects to an extradimensional space. The shortest compartment can hold up to 60 arrows or similar objects. The midsize compartment holds up to 18 javelins. The longest compartment holds up to 6 long objects, such as bows, quarterstaffs, or spears."
+    },
+    {
+      "name": "Efreeti Bottle",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears. Roll percentile dice to determine what happens."
+    },
+    {
+      "name": "Elemental Gem",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned."
+    },
+    {
+      "name": "Eversmoking Bottle",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "Smoke leaks from the lead-stoppered mouth of this brass bottle. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured."
+    },
+    {
+      "name": "Eyes of Charming",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you. The lenses regain all expended charges daily at dawn."
+    },
+    {
+      "name": "Eyes of Minute Seeing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range."
+    },
+    {
+      "name": "Eyes of the Eagle",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
+    },
+    {
+      "name": "Figurine of Wondrous Power",
+      "type": "Wondrous item",
+      "rarity": "Varies",
+      "attunement": false,
+      "description": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature."
+    },
+    {
+      "name": "Flame Tongue",
+      "type": "Weapon (any sword)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits."
+    },
+    {
+      "name": "Folding Boat",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds. You can use an action to unfold the box into a boat 10 feet long, 4 feet wide, and 2 feet deep. A second command word causes it to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep."
+    },
+    {
+      "name": "Frost Brand",
+      "type": "Weapon (any sword)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage. In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+    },
+    {
+      "name": "Gauntlets of Ogre Power",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher."
+    },
+    {
+      "name": "Gem of Brightness",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause it to shed bright light, fire a beam of light, or flare blindingly."
+    },
+    {
+      "name": "Gem of Seeing",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem. The gem regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Giant Slayer",
+      "type": "Weapon (any axe or sword)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone."
+    },
+    {
+      "name": "Glamoured Studded Leather",
+      "type": "Armor (studded leather)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor."
+    },
+    {
+      "name": "Gloves of Missile Snaring",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "When a ranged weapon attack hits you while you're wearing these gloves, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand."
+    },
+    {
+      "name": "Gloves of Swimming and Climbing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
+    },
+    {
+      "name": "Goggles of Night",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet."
+    },
+    {
+      "name": "Hammer of Thunderbolts",
+      "type": "Weapon (maul)",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. Giant's Bane: You must be wearing a belt of giant strength and gauntlets of ogre power to attune to this weapon. Your Strength score increases by 4 (max 30). When you hit a giant, it must succeed on a DC 17 Constitution save or die."
+    },
+    {
+      "name": "Handy Haversack",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds. The central pouch can hold up to 8 cubic feet or 80 pounds. Retrieving an item from the haversack requires no action."
+    },
+    {
+      "name": "Hat of Disguise",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed."
+    },
+    {
+      "name": "Headband of Intellect",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher."
+    },
+    {
+      "name": "Helm of Brilliance",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem removed from the helm crumbles to dust. While wearing it, you can use an action to cast one of several spells by expending gems."
+    },
+    {
+      "name": "Helm of Comprehending Languages",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While wearing this helm, you can use an action to cast the comprehend languages spell from it at will."
+    },
+    {
+      "name": "Helm of Telepathy",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on."
+    },
+    {
+      "name": "Helm of Teleportation",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Holy Avenger",
+      "type": "Weapon (any sword)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a paladin",
+      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage. While you hold the drawn sword, it creates a 10-foot-radius aura. You and friendly creatures in the aura have advantage on saving throws against spells."
+    },
+    {
+      "name": "Horn of Blasting",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute."
+    },
+    {
+      "name": "Horn of Valhalla",
+      "type": "Wondrous item",
+      "rarity": "Varies",
+      "attunement": false,
+      "description": "You can use an action to blow this horn. In response, warrior spirits from the plane of Ysgard appear within 60 feet of you. They use the statistics of a berserker and return to Ysgard after 1 hour or when they drop to 0 hit points."
+    },
+    {
+      "name": "Horseshoes of Speed",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet."
+    },
+    {
+      "name": "Horseshoes of a Zephyr",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. The creature can cross or stand above nonsolid or unstable surfaces."
+    },
+    {
+      "name": "Immovable Rod",
+      "type": "Rod",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight."
+    },
+    {
+      "name": "Instant Fortress",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it."
+    },
+    {
+      "name": "Ioun Stone",
+      "type": "Wondrous item",
+      "rarity": "Varies",
+      "attunement": true,
+      "description": "An Ioun stone is named after Ioun, a god of knowledge and prophecy. Many types exist, each type a distinct combination of shape and color. When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you."
+    },
+    {
+      "name": "Iron Bands of Bilarro",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This rusty iron sphere measures 3 inches in diameter. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. The sphere unfolds into bands of metal that attempt to restrain the target."
+    },
+    {
+      "name": "Iron Flask",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "This iron bottle has a brass stopper. You can use an action to speak the flask's command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask."
+    },
+    {
+      "name": "Javelin of Lightning",
+      "type": "Weapon (javelin)",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save."
+    },
+    {
+      "name": "Lantern of Revealing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light."
+    },
+    {
+      "name": "Luck Blade",
+      "type": "Weapon (any sword)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws. Luck: If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike."
+    },
+    {
+      "name": "Mace of Disruption",
+      "type": "Weapon (mace)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn."
+    },
+    {
+      "name": "Mace of Smiting",
+      "type": "Weapon (mace)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the mace to attack a construct. When you roll a 20 on an attack roll made with this weapon, the target takes an extra 2d6 bludgeoning damage, or 4d6 bludgeoning damage if it's a construct."
+    },
+    {
+      "name": "Mace of Terror",
+      "type": "Weapon (mace)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute."
+    },
+    {
+      "name": "Mantle of Spell Resistance",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You have advantage on saving throws against spells while you wear this cloak."
+    },
+    {
+      "name": "Manual of Bodily Health",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+    },
+    {
+      "name": "Medallion of Thoughts",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Mirror of Life Trapping",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "When this 4-foot-tall mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds. It has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points."
+    },
+    {
+      "name": "Mithral Armor",
+      "type": "Armor (medium or heavy, but not hide)",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
+    },
+    {
+      "name": "Necklace of Fireballs",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15)."
+    },
+    {
+      "name": "Nine Lives Stealer",
+      "type": "Weapon (any sword)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "You gain a +2 bonus to attack and damage rolls made with this magic weapon. The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body."
+    },
+    {
+      "name": "Oathbow",
+      "type": "Weapon (longbow)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "When you nock an arrow on this bow, it whispers in Elvish, 'Swift defeat to my enemies.' When you use this weapon to make a ranged attack, you can speak its command word: 'Swift death to you who have wronged me.' The target becomes your sworn enemy until it dies or until dawn seven days later."
+    },
+    {
+      "name": "Periapt of Health",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed while you wear the pendant."
+    },
+    {
+      "name": "Periapt of Proof Against Poison",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage."
+    },
+    {
+      "name": "Periapt of Wound Closure",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores."
+    },
+    {
+      "name": "Pipes of Haunting",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute."
+    },
+    {
+      "name": "Pipes of the Sewers",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them."
+    },
+    {
+      "name": "Plate Armor of Etherealness",
+      "type": "Armor (plate)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While you're wearing this armor, you can speak its command word as an action to gain the effect of the etherealness spell, which lasts for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn."
+    },
+    {
+      "name": "Portable Hole",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter. You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep."
+    },
+    {
+      "name": "Ring of Animal Influence",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells: animal friendship (save DC 13), fear (save DC 13, targeting only beasts), or speak with animals."
+    },
+    {
+      "name": "Ring of Djinni Summoning",
+      "type": "Ring",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While wearing this ring, you can speak its command word as an action to summon a particular djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour."
+    },
+    {
+      "name": "Ring of Evasion",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead."
+    },
+    {
+      "name": "Ring of Feather Falling",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling."
+    },
+    {
+      "name": "Ring of Free Action",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained."
+    },
+    {
+      "name": "Ring of Invisibility",
+      "type": "Ring",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again."
+    },
+    {
+      "name": "Ring of Jumping",
+      "type": "Ring",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so."
+    },
+    {
+      "name": "Ring of Mind Shielding",
+      "type": "Ring",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it."
+    },
+    {
+      "name": "Ring of Protection",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You gain a +1 bonus to AC and saving throws while wearing this ring."
+    },
+    {
+      "name": "Ring of Regeneration",
+      "type": "Ring",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time."
+    },
+    {
+      "name": "Ring of Resistance",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type: Pearl (acid), Tourmaline (cold), Garnet (fire), Sapphire (force), Citrine (lightning), Jet (necrotic), Amethyst (poison), Jade (psychic), Topaz (radiant), Spinel (thunder)."
+    },
+    {
+      "name": "Ring of Shooting Stars",
+      "type": "Ring",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement outdoors at night",
+      "description": "While wearing this ring in dim light or darkness, you can cast dancing lights and light from the ring at will. The ring has 6 charges for other properties, regaining 1d6 charges daily at dawn."
+    },
+    {
+      "name": "Ring of Spell Storing",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast."
+    },
+    {
+      "name": "Ring of Spell Turning",
+      "type": "Ring",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster."
+    },
+    {
+      "name": "Ring of Swimming",
+      "type": "Ring",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "You have a swimming speed of 40 feet while wearing this ring."
+    },
+    {
+      "name": "Ring of Telekinesis",
+      "type": "Ring",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried."
+    },
+    {
+      "name": "Ring of the Ram",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to make a ranged spell attack against one creature or object you can see within 60 feet of you."
+    },
+    {
+      "name": "Ring of Warmth",
+      "type": "Ring",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit."
+    },
+    {
+      "name": "Ring of Water Walking",
+      "type": "Ring",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground."
+    },
+    {
+      "name": "Ring of X-ray Vision",
+      "type": "Ring",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. Solid objects within that radius appear transparent."
+    },
+    {
+      "name": "Robe of Eyes",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits: You can see in all directions, you have advantage on Wisdom (Perception) checks that rely on sight, you have darkvision out to 120 feet, and you can see invisible creatures and objects."
+    },
+    {
+      "name": "Robe of Scintillating Colors",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. This grants you advantage on Charisma (Performance) checks, and attack rolls against you have disadvantage."
+    },
+    {
+      "name": "Robe of Stars",
+      "type": "Wondrous item",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it. Six stars are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell."
+    },
+    {
+      "name": "Robe of the Archmagi",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a sorcerer, warlock, or wizard",
+      "description": "This elegant garment is made from exquisite cloth and adorned with silvery runes. If you aren't wearing armor, your base AC is 15 + your Dexterity modifier. You have advantage on saving throws against spells and other magical effects, and your spell save DC and spell attack bonus each increase by 2."
+    },
+    {
+      "name": "Robe of Useful Items",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This robe has cloth patches of various shapes and colors covering it. While wearing the robe, you can use an action to detach one of the patches, causing it to become the object or creature it represents. The robe has 2d4 common patches and 4d4 special patches."
+    },
+    {
+      "name": "Rod of Absorption",
+      "type": "Rod",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy is stored in the rod."
+    },
+    {
+      "name": "Rod of Alertness",
+      "type": "Rod",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This rod has a flanged head and the following properties. While holding the rod, you have advantage on Wisdom (Perception) checks and on rolls for initiative. The rod has various magical properties including casting detect evil and good, detect magic, detect poison and disease, and see invisibility."
+    },
+    {
+      "name": "Rod of Lordly Might",
+      "type": "Rod",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "This rod has a flanged head, and it functions as a magic mace that grants a +3 bonus to attack and damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft."
+    },
+    {
+      "name": "Rod of Rulership",
+      "type": "Rod",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours."
+    },
+    {
+      "name": "Rod of Security",
+      "type": "Rod",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space."
+    },
+    {
+      "name": "Rope of Climbing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose."
+    },
+    {
+      "name": "Rope of Entanglement",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained."
+    },
+    {
+      "name": "Scarab of Protection",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person: You have advantage on saving throws against spells, and the scarab has 12 charges."
+    },
+    {
+      "name": "Scimitar of Speed",
+      "type": "Weapon (scimitar)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns."
+    },
+    {
+      "name": "Shield, +1",
+      "type": "Armor (shield)",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+    },
+    {
+      "name": "Shield, +2",
+      "type": "Armor (shield)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+    },
+    {
+      "name": "Shield, +3",
+      "type": "Armor (shield)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "While holding this shield, you have a +3 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+    },
+    {
+      "name": "Shield of Missile Attraction",
+      "type": "Armor (shield)",
+      "rarity": "Rare",
+      "attunement": true,
+      "cursed": true,
+      "description": "While holding this shield, you have resistance to damage from ranged weapon attacks. Curse: This shield is cursed. Whenever a ranged weapon attack is made against a target within 10 feet of you, the curse causes you to become the target instead."
+    },
+    {
+      "name": "Slippers of Spider Climbing",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed."
+    },
+    {
+      "name": "Sovereign Glue",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. One ounce of the glue can cover a 1-foot square surface and takes 1 minute to set."
+    },
+    {
+      "name": "Spell Scroll",
+      "type": "Scroll",
+      "rarity": "Varies",
+      "attunement": false,
+      "description": "A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible."
+    },
+    {
+      "name": "Spellguard Shield",
+      "type": "Armor (shield)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
+    },
+    {
+      "name": "Sphere of Annihilation",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it. The sphere obliterates all matter it passes through and all matter that passes through it."
+    },
+    {
+      "name": "Staff of Charming",
+      "type": "Staff",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard",
+      "description": "While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC."
+    },
+    {
+      "name": "Staff of Fire",
+      "type": "Staff",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a druid, sorcerer, warlock, or wizard",
+      "description": "You have resistance to fire damage while you hold this staff. The staff has 10 charges. While holding it, you can use an action to expend charges to cast burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges)."
+    },
+    {
+      "name": "Staff of Frost",
+      "type": "Staff",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a druid, sorcerer, warlock, or wizard",
+      "description": "You have resistance to cold damage while you hold this staff. The staff has 10 charges. While holding it, you can use an action to expend charges to cast cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges)."
+    },
+    {
+      "name": "Staff of Healing",
+      "type": "Staff",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a bard, cleric, or druid",
+      "description": "This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: cure wounds (1 charge per spell level, up to 4th), lesser restoration (2 charges), or mass cure wounds (5 charges)."
+    },
+    {
+      "name": "Staff of Power",
+      "type": "Staff",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a sorcerer, warlock, or wizard",
+      "description": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to AC, saving throws, and spell attack rolls. The staff has 20 charges for various spells."
+    },
+    {
+      "name": "Staff of Striking",
+      "type": "Staff",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This staff can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it. The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 force damage."
+    },
+    {
+      "name": "Staff of Swarming Insects",
+      "type": "Staff",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard",
+      "description": "This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. While holding it, you can use an action to expend charges to cast giant insect (4 charges) or insect plague (5 charges)."
+    },
+    {
+      "name": "Staff of the Magi",
+      "type": "Staff",
+      "rarity": "Legendary",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a sorcerer, warlock, or wizard",
+      "description": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls. The staff has 50 charges for various spells."
+    },
+    {
+      "name": "Staff of the Python",
+      "type": "Staff",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a cleric, druid, or warlock",
+      "description": "You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count."
+    },
+    {
+      "name": "Staff of the Woodlands",
+      "type": "Staff",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a druid",
+      "description": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls. The staff has 10 charges for various spells."
+    },
+    {
+      "name": "Staff of Thunder and Lightning",
+      "type": "Staff",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties: Lightning, Thunder, Lightning Strike, Thunderclap, and Thunder and Lightning."
+    },
+    {
+      "name": "Staff of Withering",
+      "type": "Staff",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a cleric, druid, or warlock",
+      "description": "This staff has 3 charges and regains 1d3 expended charges daily at dawn. The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target."
+    },
+    {
+      "name": "Stone of Controlling Earth Elementals",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn."
+    },
+    {
+      "name": "Sun Blade",
+      "type": "Weapon (longsword)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. You gain a +2 bonus to attack and damage rolls and the blade emits bright light in a 15-foot radius."
+    },
+    {
+      "name": "Sword of Life Stealing",
+      "type": "Weapon (any sword)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt."
+    },
+    {
+      "name": "Sword of Sharpness",
+      "type": "Weapon (any sword that deals slashing damage)",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "description": "When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target. When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 4d6 slashing damage. Then roll another d20. If you roll a 20, you lop off one of the target's limbs."
+    },
+    {
+      "name": "Sword of Wounding",
+      "type": "Weapon (any sword)",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means. Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target."
+    },
+    {
+      "name": "Talisman of Pure Good",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a creature of good alignment",
+      "description": "This talisman is a mighty symbol of goodness. A creature that is neither good nor evil in alignment takes 6d6 radiant damage upon touching the talisman. An evil creature takes 8d6 radiant damage upon touching the talisman. The talisman has 7 charges."
+    },
+    {
+      "name": "Talisman of the Sphere",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 × your Intelligence modifier."
+    },
+    {
+      "name": "Talisman of Ultimate Evil",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a creature of evil alignment",
+      "description": "This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. The talisman has 6 charges."
+    },
+    {
+      "name": "Tentacle Rod",
+      "type": "Rod",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "Made by the drow, this rod is a magic weapon that ends in three rubbery tentacles. While holding the rod, you can use an action to direct each tentacle to attack a creature you can see within 15 feet of you."
+    },
+    {
+      "name": "Trident of Fish Command",
+      "type": "Weapon (trident)",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast dominate beast (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Universal Solvent",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue."
+    },
+    {
+      "name": "Vicious Weapon",
+      "type": "Weapon (any)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type."
+    },
+    {
+      "name": "Vorpal Sword",
+      "type": "Weapon (any sword that deals slashing damage)",
+      "rarity": "Legendary",
+      "attunement": true,
+      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage. When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads."
+    },
+    {
+      "name": "Wand of Binding",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend charges to cast hold monster (5 charges) or hold person (2 charges) from it using your spell save DC."
+    },
+    {
+      "name": "Wand of Enemy Detection",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you."
+    },
+    {
+      "name": "Wand of Fear",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the command spell (save DC 15)."
+    },
+    {
+      "name": "Wand of Fireballs",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend."
+    },
+    {
+      "name": "Wand of Lightning Bolts",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell."
+    },
+    {
+      "name": "Wand of Magic Detection",
+      "type": "Wand",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This wand has 3 charges. While holding it, you can expend 1 charge as an action to cast the detect magic spell from it. The wand regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Wand of Magic Missiles",
+      "type": "Wand",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend."
+    },
+    {
+      "name": "Wand of Paralysis",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of you. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute."
+    },
+    {
+      "name": "Wand of Polymorph",
+      "type": "Wand",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the polymorph spell (save DC 15) from it. The wand regains 1d6 + 1 expended charges daily at dawn."
+    },
+    {
+      "name": "Wand of Secrets",
+      "type": "Wand",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Wand of the War Mage, +1",
+      "type": "Wand",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
+    },
+    {
+      "name": "Wand of the War Mage, +2",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "While holding this wand, you gain a +2 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
+    },
+    {
+      "name": "Wand of the War Mage, +3",
+      "type": "Wand",
+      "rarity": "Very Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "While holding this wand, you gain a +3 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
+    },
+    {
+      "name": "Wand of Web",
+      "type": "Wand",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the web spell (save DC 15) from it. The wand regains 1d6 + 1 expended charges daily at dawn."
+    },
+    {
+      "name": "Wand of Wonder",
+      "type": "Wand",
+      "rarity": "Rare",
+      "attunement": true,
+      "attunement_requirement": "requires attunement by a spellcaster",
+      "description": "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll d100 and consult the table to discover what happens."
+    },
+    {
+      "name": "Weapon, +1",
+      "type": "Weapon (any)",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon."
+    },
+    {
+      "name": "Weapon, +2",
+      "type": "Weapon (any)",
+      "rarity": "Rare",
+      "attunement": false,
+      "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon."
+    },
+    {
+      "name": "Weapon, +3",
+      "type": "Weapon (any)",
+      "rarity": "Very Rare",
+      "attunement": false,
+      "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon."
+    },
+    {
+      "name": "Well of Many Worlds",
+      "type": "Wondrous item",
+      "rarity": "Legendary",
+      "attunement": false,
+      "description": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter. You can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence."
+    },
+    {
+      "name": "Wind Fan",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": false,
+      "description": "While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters."
+    },
+    {
+      "name": "Winged Boots",
+      "type": "Wondrous item",
+      "rarity": "Uncommon",
+      "attunement": true,
+      "description": "While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
+    },
+    {
+      "name": "Wings of Flying",
+      "type": "Wondrous item",
+      "rarity": "Rare",
+      "attunement": true,
+      "description": "While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet."
+    }
+  ]
+}

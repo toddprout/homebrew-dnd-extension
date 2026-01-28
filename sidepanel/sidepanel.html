@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homebrew DND - DM Reference</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <link rel="stylesheet" href="sidepanel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidepanel-container">
+    <!-- Header -->
+    <header class="sidepanel-header">
+      <div class="header-top">
+        <div class="logo">
+          <img src="../icons/icon48.png" alt="" class="logo-icon">
+          <div class="logo-text">
+            <span class="logo-title">Homebrew DND</span>
+            <span class="logo-subtitle">DM Quick Reference</span>
+          </div>
+        </div>
+        <button class="btn-icon" id="settingsBtn" title="Settings">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput" 
+          placeholder="Search equipment, items, tables..."
+          autocomplete="off"
+        >
+        <button class="btn-icon search-clear" id="searchClear" title="Clear search">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="browse">Browse</button>
+      <button class="tab" data-tab="tables">Tables</button>
+      <button class="tab" data-tab="npc">NPC</button>
+      <button class="tab" data-tab="dice">Dice</button>
+      <button class="tab" data-tab="favorites">Favorites</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="sidepanel-content">
+      <!-- Search Results (shown when searching) -->
+      <section class="content-section search-results-section" id="searchResultsSection">
+        <div class="section-header">
+          <h2>Search Results</h2>
+          <span class="result-count" id="resultCount">0 results</span>
+        </div>
+        <div class="search-results-list" id="searchResultsList">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Browse Tab -->
+      <section class="content-section" id="browseSection">
+        <div class="category-grid">
+          <button class="category-card" data-category="weapons">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M6.92 5H5l8.5 8.5L12 15l-1 1-3.5-3.5-4 4L5 18l4-4 3.5 3.5 1-1 1.5-1.5L6.92 5zM19 3l2 2-2.5 2.5-2-2L19 3z"/>
+              </svg>
+            </div>
+            <span class="category-name">Weapons</span>
+            <span class="category-count" id="count-weapons">0</span>
+          </button>
+          
+          <button class="category-card" data-category="armor">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+              </svg>
+            </div>
+            <span class="category-name">Armor</span>
+            <span class="category-count" id="count-armor">0</span>
+          </button>
+          
+          <button class="category-card" data-category="adventuring_gear">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+            </div>
+            <span class="category-name">Adventuring Gear</span>
+            <span class="category-count" id="count-adventuring_gear">0</span>
+          </button>
+          
+          <button class="category-card" data-category="tools">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+              </svg>
+            </div>
+            <span class="category-name">Tools</span>
+            <span class="category-count" id="count-tools">0</span>
+          </button>
+          
+          <button class="category-card" data-category="mounts_vehicles">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+              </svg>
+            </div>
+            <span class="category-name">Mounts & Vehicles</span>
+            <span class="category-count" id="count-mounts_vehicles">0</span>
+          </button>
+          
+          <button class="category-card" data-category="magic_items">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29a.996.996 0 00-1.41 0L1.29 18.96a.996.996 0 000 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05a.996.996 0 000-1.41l-2.33-2.35zm-1.03 5.49l-2.12-2.12 2.44-2.44 2.12 2.12-2.44 2.44z"/>
+              </svg>
+            </div>
+            <span class="category-name">Magic Items</span>
+            <span class="category-count" id="count-magic_items">0</span>
+          </button>
+          
+          <button class="category-card" data-category="potions">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M19 8h-1.26c-.19-.73-.48-1.42-.85-2.06l.94-.94a.996.996 0 000-1.41l-1.41-1.41a.996.996 0 00-1.41 0l-.94.94c-.65-.38-1.34-.67-2.07-.86V1c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v1.26c-.76.2-1.47.5-2.13.89L5 2.22a.996.996 0 00-1.41 0L2.18 3.63a.996.996 0 000 1.41l.94.94c-.38.63-.67 1.32-.87 2.02H1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h1.26c.19.73.48 1.42.85 2.06l-.94.94a.996.996 0 000 1.41l1.41 1.41c.39.39 1.02.39 1.41 0l.94-.94c.64.38 1.33.66 2.07.85V23c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-1.26c.76-.2 1.47-.5 2.13-.89l.94.94c.39.39 1.02.39 1.41 0l1.41-1.41a.996.996 0 000-1.41l-.94-.94c.38-.63.67-1.32.87-2.03H23c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1h-4zm-7 8c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+              </svg>
+            </div>
+            <span class="category-name">Potions</span>
+            <span class="category-count" id="count-potions">0</span>
+          </button>
+          
+          <button class="category-card homebrew" data-category="tavern_drinks">
+            <div class="category-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M3 14c0 1.3.84 2.4 2 2.82V20H3v2h6v-2H7v-3.18C8.16 16.4 9 15.3 9 14V6H3v8zm2-6h2v3H5V8zm15.64 1L19 7h-4l-1.64 2H9v2h3.36l2 6H19v2h2v-4h-2v-2h-2l-1-3h1.64z"/>
+              </svg>
+            </div>
+            <span class="category-name">Tavern Drinks</span>
+            <span class="category-count" id="count-tavern_drinks">0</span>
+            <span class="homebrew-badge">Homebrew</span>
+          </button>
+        </div>
+        
+        <!-- Category Items List (shown when category selected) -->
+        <div class="category-items-section" id="categoryItemsSection">
+          <div class="section-header">
+            <button class="btn-ghost back-btn" id="backToCategories">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+              </svg>
+              Back
+            </button>
+            <h2 id="categoryTitle">Category</h2>
+          </div>
+          <div class="items-list" id="itemsList">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Tables Tab -->
+      <section class="content-section hidden" id="tablesSection">
+        <div class="tables-grid">
+          <div class="table-card" data-table="trinkets">
+            <div class="table-icon">🎲</div>
+            <div class="table-info">
+              <h3>Trinkets</h3>
+              <p>100 curious items with mysterious origins</p>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card" data-table="wild_magic">
+            <div class="table-icon">✨</div>
+            <div class="table-info">
+              <h3>Wild Magic Surge</h3>
+              <p>50 chaotic magical effects</p>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="tavern_drinks">
+            <div class="table-icon">🍺</div>
+            <div class="table-info">
+              <h3>Tavern Drinks</h3>
+              <p>50 magical and mundane beverages</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="npc_quirks">
+            <div class="table-icon">🎭</div>
+            <div class="table-info">
+              <h3>NPC Quirks</h3>
+              <p>100 personality traits and mannerisms</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="loot">
+            <div class="table-icon">💰</div>
+            <div class="table-info">
+              <h3>Loot & Treasure</h3>
+              <p>50 treasures scaled by roll</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="tavern_events">
+            <div class="table-icon">🍻</div>
+            <div class="table-info">
+              <h3>Tavern Events</h3>
+              <p>50 scenes when walking into a tavern</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="weather">
+            <div class="table-icon">🌦️</div>
+            <div class="table-info">
+              <h3>Weather</h3>
+              <p>38 weather conditions with effects</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="dungeon_dressing">
+            <div class="table-icon">🏰</div>
+            <div class="table-info">
+              <h3>Dungeon Dressing</h3>
+              <p>50 details for empty rooms</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+          
+          <div class="table-card homebrew" data-table="corpse_pockets">
+            <div class="table-icon">💀</div>
+            <div class="table-info">
+              <h3>Corpse Pockets</h3>
+              <p>50 items found on dead bodies</p>
+              <span class="homebrew-badge">Homebrew</span>
+            </div>
+            <button class="btn btn-primary roll-table-btn">Roll d100</button>
+          </div>
+        </div>
+        
+        <!-- Table Result Display -->
+        <div class="table-result-display" id="tableResultDisplay">
+          <div class="table-result-header">
+            <h3 id="tableResultName">Roll Result</h3>
+            <div class="table-result-roll-value">
+              <span class="roll-label">Rolled:</span>
+              <span class="roll-number" id="tableRollNumber">00</span>
+            </div>
+          </div>
+          <div class="table-result-content" id="tableResultContent">
+            <!-- Result shown here -->
+          </div>
+          <div class="table-result-actions">
+            <button class="btn btn-secondary" id="rerollTableBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+              </svg>
+              Roll Again
+            </button>
+            <button class="btn btn-ghost" id="copyResultBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+              </svg>
+              Copy
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dice Tab -->
+      <section class="content-section hidden" id="diceSection">
+        <div class="dice-roller-full">
+          <div class="dice-display">
+            <div class="dice-result-large" id="diceResultLarge">—</div>
+            <div class="dice-notation" id="diceNotation"></div>
+          </div>
+          
+          <div class="dice-buttons-grid">
+            <button class="dice-btn-large" data-sides="4">
+              <span class="dice-label">d4</span>
+            </button>
+            <button class="dice-btn-large" data-sides="6">
+              <span class="dice-label">d6</span>
+            </button>
+            <button class="dice-btn-large" data-sides="8">
+              <span class="dice-label">d8</span>
+            </button>
+            <button class="dice-btn-large" data-sides="10">
+              <span class="dice-label">d10</span>
+            </button>
+            <button class="dice-btn-large" data-sides="12">
+              <span class="dice-label">d12</span>
+            </button>
+            <button class="dice-btn-large" data-sides="20">
+              <span class="dice-label">d20</span>
+            </button>
+            <button class="dice-btn-large d100" data-sides="100">
+              <span class="dice-label">d100</span>
+            </button>
+          </div>
+          
+          <!-- Custom Roll Input -->
+          <div class="custom-roll-section">
+            <label for="customRollInput">Custom Roll</label>
+            <div class="custom-roll-input-group">
+              <input 
+                type="text" 
+                id="customRollInput" 
+                placeholder="e.g., 2d6+3, 4d8-1"
+                autocomplete="off"
+              >
+              <button class="btn btn-primary" id="customRollBtn">Roll</button>
+            </div>
+          </div>
+          
+          <!-- Roll History -->
+          <div class="roll-history-section">
+            <h3>Roll History</h3>
+            <div class="roll-history-list" id="rollHistoryList">
+              <div class="empty-state">No rolls yet</div>
+            </div>
+            <button class="btn btn-ghost" id="clearHistoryBtn">Clear History</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorites Tab -->
+      <section class="content-section hidden" id="favoritesSection">
+        <div class="favorites-list" id="favoritesList">
+          <div class="empty-state">
+            <div class="empty-state-icon">⭐</div>
+            <p>No favorites yet</p>
+            <p class="text-muted">Click the star on any item to save it here</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NPC Generator Tab -->
+      <section class="content-section hidden" id="npcSection">
+        <div class="npc-generator">
+          <!-- Controls -->
+          <div class="npc-controls">
+            <button class="btn btn-primary" id="generateNPCBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+              </svg>
+              Generate NPC
+            </button>
+            <div class="npc-filters">
+              <select id="npcRaceFilter">
+                <option value="">Any Race</option>
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="halfling">Halfling</option>
+                <option value="half-orc">Half-Orc</option>
+                <option value="tiefling">Tiefling</option>
+                <option value="gnome">Gnome</option>
+                <option value="dragonborn">Dragonborn</option>
+              </select>
+              <select id="npcDetailLevel">
+                <option value="standard">Standard</option>
+                <option value="quick">Quick</option>
+                <option value="full">Full Detail</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- NPC Card -->
+          <div class="npc-card" id="npcCard">
+            <div class="npc-card-empty">
+              <div class="empty-state-icon">🎭</div>
+              <p>Click "Generate NPC" to create a character</p>
+            </div>
+          </div>
+
+          <!-- NPC Card Template (hidden, used by JS) -->
+          <template id="npcCardTemplate">
+            <div class="npc-card-content">
+              <div class="npc-header">
+                <h2 class="npc-name"></h2>
+                <div class="npc-subtitle"></div>
+              </div>
+              
+              <div class="npc-fields">
+                <div class="npc-field" data-field="appearance">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">📐 Appearance</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field" data-field="voice">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">🗣️ Voice</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field" data-field="personality">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">💭 Personality</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field" data-field="mood">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">😊 Current Mood</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field" data-field="quirk">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">🎪 Quirk</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field npc-field-secret" data-field="secret">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">🤫 Secret</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+
+                <div class="npc-field npc-field-bond" data-field="bond">
+                  <div class="npc-field-header">
+                    <span class="npc-field-label">🔗 Bond</span>
+                    <div class="npc-field-actions">
+                      <button class="btn-icon btn-lock" title="Lock this field">🔓</button>
+                      <button class="btn-icon btn-reroll" title="Reroll this field">🎲</button>
+                    </div>
+                  </div>
+                  <div class="npc-field-value"></div>
+                </div>
+              </div>
+
+              <div class="npc-card-actions">
+                <button class="btn btn-ghost" id="copyNPCBtn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                  </svg>
+                  Copy
+                </button>
+                <button class="btn btn-ghost" id="saveNPCBtn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  Save
+                </button>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </main>
+
+    <!-- Item Detail Overlay -->
+    <div class="item-detail-overlay" id="itemDetailOverlay">
+      <div class="item-detail-panel">
+        <div class="item-detail-header">
+          <div>
+            <h2 id="itemDetailName">Item Name</h2>
+            <span class="item-detail-type" id="itemDetailType">Type</span>
+          </div>
+          <div class="item-detail-actions">
+            <button class="btn-icon favorite-btn" id="favoriteBtn" title="Add to Favorites">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </button>
+            <button class="btn-icon" id="closeDetailBtn" title="Close">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="item-detail-body" id="itemDetailBody">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sidepanel-footer">
+      <a href="https://www.homebrewdnd.com" target="_blank">homebrewdnd.com</a>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="../shared/utils.js"></script>
+  <script src="../shared/npc-generator.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

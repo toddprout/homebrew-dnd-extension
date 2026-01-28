@@ -1,0 +1,76 @@
+{
+  "name": "NPC Ages",
+  "description": "Age categories with race-appropriate year ranges",
+  "categories": [
+    {
+      "label": "Young Adult",
+      "description": "Just starting out in life",
+      "ranges": {
+        "human": "18-25",
+        "elf": "100-200",
+        "dwarf": "50-100",
+        "halfling": "20-35",
+        "half-orc": "14-20",
+        "tiefling": "18-25",
+        "gnome": "40-80",
+        "dragonborn": "15-25"
+      }
+    },
+    {
+      "label": "Adult",
+      "description": "In the prime of life",
+      "ranges": {
+        "human": "26-40",
+        "elf": "200-400",
+        "dwarf": "100-200",
+        "halfling": "36-60",
+        "half-orc": "21-35",
+        "tiefling": "26-45",
+        "gnome": "80-200",
+        "dragonborn": "26-50"
+      }
+    },
+    {
+      "label": "Middle-Aged",
+      "description": "Experienced and established",
+      "ranges": {
+        "human": "41-55",
+        "elf": "400-550",
+        "dwarf": "200-300",
+        "halfling": "61-90",
+        "half-orc": "36-50",
+        "tiefling": "46-65",
+        "gnome": "200-350",
+        "dragonborn": "51-65"
+      }
+    },
+    {
+      "label": "Elderly",
+      "description": "Gray-haired but not frail",
+      "ranges": {
+        "human": "56-70",
+        "elf": "550-700",
+        "dwarf": "300-380",
+        "halfling": "91-130",
+        "half-orc": "51-65",
+        "tiefling": "66-80",
+        "gnome": "350-450",
+        "dragonborn": "66-75"
+      }
+    },
+    {
+      "label": "Ancient",
+      "description": "Venerable and wise",
+      "ranges": {
+        "human": "71+",
+        "elf": "700+",
+        "dwarf": "380+",
+        "halfling": "130+",
+        "half-orc": "65+",
+        "tiefling": "80+",
+        "gnome": "450+",
+        "dragonborn": "75+"
+      }
+    }
+  ]
+}

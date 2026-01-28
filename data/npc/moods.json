@@ -1,0 +1,21 @@
+{
+  "name": "NPC Moods",
+  "description": "Current emotional state when the party encounters them",
+  "entries": [
+    { "mood": "Cheerful", "description": "Having a good day, smiles easily" },
+    { "mood": "Distracted", "description": "Mind clearly elsewhere, not fully present" },
+    { "mood": "Anxious", "description": "Nervous about something, jumpy" },
+    { "mood": "Irritable", "description": "Short-tempered, easily annoyed" },
+    { "mood": "Exhausted", "description": "Visibly tired, yawning" },
+    { "mood": "Suspicious", "description": "Wary of the party, guarded" },
+    { "mood": "Excited", "description": "Energetic, perhaps about recent news" },
+    { "mood": "Melancholy", "description": "Sad but trying to hide it" },
+    { "mood": "Frustrated", "description": "Something isn't going their way" },
+    { "mood": "Content", "description": "At peace, calm demeanor" },
+    { "mood": "Rushed", "description": "In a hurry, speaks quickly" },
+    { "mood": "Bored", "description": "Uninterested, going through motions" },
+    { "mood": "Drunk", "description": "Had a few too many, loose-lipped" },
+    { "mood": "Grieving", "description": "Recently lost someone or something" },
+    { "mood": "Hopeful", "description": "Optimistic about the future" }
+  ]
+}

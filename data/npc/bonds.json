@@ -1,0 +1,21 @@
+{
+  "name": "NPC Bonds",
+  "description": "What the NPC cares about and is connected to",
+  "entries": [
+    { "bond": "Would do anything to protect their family", "type": "family" },
+    { "bond": "Owes a life debt to someone powerful", "type": "debt" },
+    { "bond": "Seeking revenge against someone who wronged them", "type": "revenge" },
+    { "bond": "Devoted to their faith above all else", "type": "religion" },
+    { "bond": "Loyal to their guild or organization", "type": "organization" },
+    { "bond": "Protecting an important heirloom or artifact", "type": "object" },
+    { "bond": "In love with someone who doesn't know", "type": "love" },
+    { "bond": "Trying to restore their family's honor", "type": "family" },
+    { "bond": "Sworn to serve and protect their homeland", "type": "place" },
+    { "bond": "Searching for a long-lost relative", "type": "family" },
+    { "bond": "Dedicated to a mentor who taught them everything", "type": "person" },
+    { "bond": "Haunted by a mistake they made years ago", "type": "past" },
+    { "bond": "Desperate to prove themselves to someone", "type": "approval" },
+    { "bond": "Bound by an oath they now regret", "type": "oath" },
+    { "bond": "Working to pay off a family member's debt", "type": "debt" }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "name": "Potions",
+  "description": "Magical potions and oils from the SRD",
+  "items": [
+    {
+      "name": "Potion of Healing",
+      "rarity": "Common",
+      "cost": "50 gp",
+      "description": "You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    },
+    {
+      "name": "Potion of Greater Healing",
+      "rarity": "Uncommon",
+      "cost": "100 gp",
+      "description": "You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    },
+    {
+      "name": "Potion of Superior Healing",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "You regain 8d4 + 8 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    },
+    {
+      "name": "Potion of Supreme Healing",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "You regain 10d4 + 20 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    },
+    {
+      "name": "Potion of Animal Friendship",
+      "rarity": "Uncommon",
+      "cost": "200 gp",
+      "description": "When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair."
+    },
+    {
+      "name": "Potion of Clairvoyance",
+      "rarity": "Rare",
+      "cost": "1,000 gp",
+      "description": "When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened."
+    },
+    {
+      "name": "Potion of Climbing",
+      "rarity": "Common",
+      "cost": "50 gp",
+      "description": "When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
+    },
+    {
+      "name": "Potion of Diminution",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "When you drink this potion, you gain the 'reduce' effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it."
+    },
+    {
+      "name": "Potion of Fire Breath",
+      "rarity": "Uncommon",
+      "cost": "150 gp",
+      "description": "After drinking this potion, you can use a bonus action to exhale fire at a target within 30 feet of you. The target must make a DC 13 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The effect ends after you exhale the fire three times or when 1 hour has passed. This potion's orange liquid flickers, and smoke fills the top of the container and wafts out whenever it is opened."
+    },
+    {
+      "name": "Potion of Flying",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
+    },
+    {
+      "name": "Potion of Gaseous Form",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
+    },
+    {
+      "name": "Potion of Giant Strength (Hill Giant)",
+      "rarity": "Uncommon",
+      "cost": "200 gp",
+      "description": "When you drink this potion, your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant."
+    },
+    {
+      "name": "Potion of Giant Strength (Frost/Stone Giant)",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a frost or stone giant."
+    },
+    {
+      "name": "Potion of Giant Strength (Fire Giant)",
+      "rarity": "Rare",
+      "cost": "1,000 gp",
+      "description": "When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a fire giant."
+    },
+    {
+      "name": "Potion of Giant Strength (Cloud Giant)",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "When you drink this potion, your Strength score changes to 27 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a cloud giant."
+    },
+    {
+      "name": "Potion of Giant Strength (Storm Giant)",
+      "rarity": "Legendary",
+      "cost": "25,000 gp",
+      "description": "When you drink this potion, your Strength score changes to 29 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. This potion's transparent liquid has floating in it a sliver of fingernail from a storm giant."
+    },
+    {
+      "name": "Potion of Growth",
+      "rarity": "Uncommon",
+      "cost": "200 gp",
+      "description": "When you drink this potion, you gain the 'enlarge' effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts."
+    },
+    {
+      "name": "Potion of Heroism",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling."
+    },
+    {
+      "name": "Potion of Invisibility",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell."
+    },
+    {
+      "name": "Potion of Invulnerability",
+      "rarity": "Rare",
+      "cost": "1,000 gp",
+      "description": "For 1 minute after you drink this potion, you have resistance to all damage. The potion's syrupy liquid looks like liquefied iron."
+    },
+    {
+      "name": "Potion of Longevity",
+      "rarity": "Very Rare",
+      "cost": "10,000 gp",
+      "description": "When you drink this potion, your physical age is reduced by 1d6 + 6 years, to a minimum of 13 years. Each time you subsequently drink a potion of longevity, there is a 10 percent cumulative chance that you instead age by 1d6 + 6 years. Suspended in this amber liquid are a scorpion's tail, an adder's fang, a dead spider, and a tiny heart that, against all reason, is still beating."
+    },
+    {
+      "name": "Potion of Mind Reading",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it."
+    },
+    {
+      "name": "Potion of Poison",
+      "rarity": "Uncommon",
+      "cost": "100 gp",
+      "description": "This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature. If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. While poisoned, you take 3d6 poison damage at the start of each of your turns. At the end of each of your turns, you can repeat the saving throw. On a success, the poison ends."
+    },
+    {
+      "name": "Potion of Resistance (Acid)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to acid damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Cold)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to cold damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Fire)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to fire damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Force)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to force damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Lightning)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to lightning damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Necrotic)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to necrotic damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Poison)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to poison damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Psychic)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to psychic damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Radiant)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to radiant damage for 1 hour."
+    },
+    {
+      "name": "Potion of Resistance (Thunder)",
+      "rarity": "Uncommon",
+      "cost": "300 gp",
+      "description": "When you drink this potion, you gain resistance to thunder damage for 1 hour."
+    },
+    {
+      "name": "Potion of Speed",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own."
+    },
+    {
+      "name": "Potion of Water Breathing",
+      "rarity": "Uncommon",
+      "cost": "200 gp",
+      "description": "You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it."
+    },
+    {
+      "name": "Potion of Vitality",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend. The potion's crimson liquid regularly pulses with dull light, calling to mind a heartbeat."
+    },
+    {
+      "name": "Oil of Etherealness",
+      "rarity": "Rare",
+      "cost": "2,000 gp",
+      "description": "Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour."
+    },
+    {
+      "name": "Oil of Sharpness",
+      "rarity": "Very Rare",
+      "cost": "5,000 gp",
+      "description": "This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls."
+    },
+    {
+      "name": "Oil of Slipperiness",
+      "rarity": "Uncommon",
+      "cost": "500 gp",
+      "description": "This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours."
+    },
+    {
+      "name": "Philter of Love",
+      "rarity": "Uncommon",
+      "cost": "200 gp",
+      "description": "The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart."
+    },
+    {
+      "name": "Elixir of Health",
+      "rarity": "Rare",
+      "cost": "500 gp",
+      "description": "When you drink this potion, it cures any disease afflicting you, and it removes the blinded, deafened, paralyzed, and poisoned conditions. The clear red liquid has tiny bubbles of light in it."
+    },
+    {
+      "name": "Antitoxin",
+      "rarity": "Common",
+      "cost": "50 gp",
+      "description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
+    },
+    {
+      "name": "Potion of Watchful Rest",
+      "rarity": "Common",
+      "cost": "50 gp",
+      "description": "When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits."
+    }
+  ]
+}

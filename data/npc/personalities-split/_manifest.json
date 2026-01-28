@@ -1,0 +1,20 @@
+{
+  "originalFile": "personalities.json",
+  "splitDate": "2026-01-28T04:35:35.761Z",
+  "totalItems": 1353601,
+  "totalChunks": 7,
+  "wrapperKey": "negative",
+  "metadata": {
+    "name": "NPC Personalities",
+    "description": "Personality traits for NPCs, can combine 2-3"
+  },
+  "chunks": [
+    "personalities-001.json",
+    "personalities-002.json",
+    "personalities-003.json",
+    "personalities-004.json",
+    "personalities-005.json",
+    "personalities-006.json",
+    "personalities-007.json"
+  ]
+}

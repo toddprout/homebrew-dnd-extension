@@ -1,0 +1,40 @@
+{
+  "name": "NPC Occupations",
+  "description": "Jobs and roles for NPCs, tagged by social class",
+  "entries": [
+    { "occupation": "Innkeeper", "class": "commoner", "tags": ["tavern", "social"] },
+    { "occupation": "Blacksmith", "class": "commoner", "tags": ["craft", "shop"] },
+    { "occupation": "Guard", "class": "commoner", "tags": ["military", "law"] },
+    { "occupation": "Farmer", "class": "commoner", "tags": ["rural"] },
+    { "occupation": "Merchant", "class": "commoner", "tags": ["shop", "social"] },
+    { "occupation": "Barmaid", "class": "commoner", "tags": ["tavern", "social"] },
+    { "occupation": "Fisherman", "class": "commoner", "tags": ["rural", "water"] },
+    { "occupation": "Baker", "class": "commoner", "tags": ["shop", "craft"] },
+    { "occupation": "Stablehand", "class": "commoner", "tags": ["animals", "service"] },
+    { "occupation": "Beggar", "class": "lower", "tags": ["street"] },
+    
+    { "occupation": "Scholar", "class": "educated", "tags": ["knowledge", "magic"] },
+    { "occupation": "Priest", "class": "educated", "tags": ["religious", "social"] },
+    { "occupation": "Healer", "class": "educated", "tags": ["medical", "magic"] },
+    { "occupation": "Scribe", "class": "educated", "tags": ["knowledge", "service"] },
+    { "occupation": "Alchemist", "class": "educated", "tags": ["magic", "shop", "craft"] },
+    
+    { "occupation": "Noble", "class": "upper", "tags": ["political", "wealthy"] },
+    { "occupation": "Knight", "class": "upper", "tags": ["military", "noble"] },
+    { "occupation": "Court Wizard", "class": "upper", "tags": ["magic", "political"] },
+    { "occupation": "Diplomat", "class": "upper", "tags": ["political", "social"] },
+    { "occupation": "Guildmaster", "class": "upper", "tags": ["craft", "political", "wealthy"] },
+    
+    { "occupation": "Thief", "class": "criminal", "tags": ["criminal", "street"] },
+    { "occupation": "Smuggler", "class": "criminal", "tags": ["criminal", "water"] },
+    { "occupation": "Assassin", "class": "criminal", "tags": ["criminal", "dangerous"] },
+    { "occupation": "Fence", "class": "criminal", "tags": ["criminal", "shop"] },
+    { "occupation": "Pickpocket", "class": "criminal", "tags": ["criminal", "street"] },
+    
+    { "occupation": "Retired Adventurer", "class": "varied", "tags": ["adventurer", "experienced"] },
+    { "occupation": "Traveling Bard", "class": "varied", "tags": ["entertainment", "traveler"] },
+    { "occupation": "Mercenary", "class": "varied", "tags": ["military", "dangerous"] },
+    { "occupation": "Bounty Hunter", "class": "varied", "tags": ["dangerous", "law"] },
+    { "occupation": "Wandering Monk", "class": "varied", "tags": ["religious", "traveler"] }
+  ]
+}

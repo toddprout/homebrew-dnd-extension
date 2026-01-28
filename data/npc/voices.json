@@ -1,0 +1,21 @@
+{
+  "name": "NPC Voices",
+  "description": "Voice characteristics and speech patterns for NPCs",
+  "entries": [
+    { "voice": "Deep and rumbling", "pattern": "speaks slowly and deliberately" },
+    { "voice": "High-pitched and squeaky", "pattern": "talks rapidly without pause" },
+    { "voice": "Soft and whispery", "pattern": "leans in close when speaking" },
+    { "voice": "Loud and booming", "pattern": "projects voice across the room" },
+    { "voice": "Raspy and gravelly", "pattern": "clears throat frequently" },
+    { "voice": "Melodic and sing-song", "pattern": "emphasizes unusual syllables" },
+    { "voice": "Monotone and flat", "pattern": "rarely shows emotion in speech" },
+    { "voice": "Warm and honeyed", "pattern": "uses flattering language" },
+    { "voice": "Sharp and clipped", "pattern": "gets straight to the point" },
+    { "voice": "Stuttering and nervous", "pattern": "trails off mid-sentence" },
+    { "voice": "Thick foreign accent", "pattern": "occasionally uses wrong words" },
+    { "voice": "Aristocratic and precise", "pattern": "enunciates every syllable" },
+    { "voice": "Gruff and curt", "pattern": "answers in as few words as possible" },
+    { "voice": "Cheerful and bright", "pattern": "laughs frequently while talking" },
+    { "voice": "Hushed and conspiratorial", "pattern": "always sounds like sharing secrets" }
+  ]
+}

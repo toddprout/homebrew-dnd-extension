@@ -1,0 +1,600 @@
+{
+  "name": "Adventuring Gear",
+  "description": "Standard adventuring equipment from the SRD",
+  "items": [
+    {
+      "name": "Abacus",
+      "cost": "2 gp",
+      "weight": 2,
+      "description": "A calculating tool used for arithmetic."
+    },
+    {
+      "name": "Acid (vial)",
+      "cost": "25 gp",
+      "weight": 1,
+      "description": "As an action, you can splash the contents onto a creature within 5 feet or throw the vial up to 20 feet, shattering on impact. Make a ranged attack, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+    },
+    {
+      "name": "Alchemist's Fire (flask)",
+      "cost": "50 gp",
+      "weight": 1,
+      "description": "As an action, you can throw this flask up to 20 feet, shattering on impact. Make a ranged attack, treating it as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+    },
+    {
+      "name": "Ammunition, Arrows (20)",
+      "cost": "1 gp",
+      "weight": 1,
+      "description": "Standard arrows for use with bows."
+    },
+    {
+      "name": "Ammunition, Blowgun Needles (50)",
+      "cost": "1 gp",
+      "weight": 1,
+      "description": "Needles for use with a blowgun."
+    },
+    {
+      "name": "Ammunition, Crossbow Bolts (20)",
+      "cost": "1 gp",
+      "weight": 1.5,
+      "description": "Standard bolts for use with crossbows."
+    },
+    {
+      "name": "Ammunition, Sling Bullets (20)",
+      "cost": "4 cp",
+      "weight": 1.5,
+      "description": "Lead or stone bullets for use with a sling."
+    },
+    {
+      "name": "Antitoxin (vial)",
+      "cost": "50 gp",
+      "weight": 0,
+      "description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
+    },
+    {
+      "name": "Arcane Focus, Crystal",
+      "cost": "10 gp",
+      "weight": 1,
+      "description": "A crystal used as a spellcasting focus for arcane spells."
+    },
+    {
+      "name": "Arcane Focus, Orb",
+      "cost": "20 gp",
+      "weight": 3,
+      "description": "An orb used as a spellcasting focus for arcane spells."
+    },
+    {
+      "name": "Arcane Focus, Rod",
+      "cost": "10 gp",
+      "weight": 2,
+      "description": "A rod used as a spellcasting focus for arcane spells."
+    },
+    {
+      "name": "Arcane Focus, Staff",
+      "cost": "5 gp",
+      "weight": 4,
+      "description": "A staff used as a spellcasting focus for arcane spells."
+    },
+    {
+      "name": "Arcane Focus, Wand",
+      "cost": "10 gp",
+      "weight": 1,
+      "description": "A wand used as a spellcasting focus for arcane spells."
+    },
+    {
+      "name": "Backpack",
+      "cost": "2 gp",
+      "weight": 5,
+      "description": "Holds up to 1 cubic foot or 30 pounds of gear."
+    },
+    {
+      "name": "Ball Bearings (bag of 1,000)",
+      "cost": "1 gp",
+      "weight": 2,
+      "description": "As an action, you can spill these onto a level 10-foot square area. A creature moving through the area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving at half speed doesn't need to make the save."
+    },
+    {
+      "name": "Barrel",
+      "cost": "2 gp",
+      "weight": 70,
+      "description": "Holds 40 gallons of liquid or 4 cubic feet of solid material."
+    },
+    {
+      "name": "Basket",
+      "cost": "4 sp",
+      "weight": 2,
+      "description": "Holds 2 cubic feet or 40 pounds of gear."
+    },
+    {
+      "name": "Bedroll",
+      "cost": "1 gp",
+      "weight": 7,
+      "description": "A portable sleeping roll for camping."
+    },
+    {
+      "name": "Bell",
+      "cost": "1 gp",
+      "weight": 0,
+      "description": "A small metal bell."
+    },
+    {
+      "name": "Blanket",
+      "cost": "5 sp",
+      "weight": 3,
+      "description": "A thick cloth blanket for warmth."
+    },
+    {
+      "name": "Block and Tackle",
+      "cost": "1 gp",
+      "weight": 5,
+      "description": "A set of pulleys with a cable threaded through them. When attached to a surface, allows you to hoist up to four times the weight you can normally lift."
+    },
+    {
+      "name": "Book",
+      "cost": "25 gp",
+      "weight": 5,
+      "description": "A blank book for writing or a tome with existing content."
+    },
+    {
+      "name": "Bottle, Glass",
+      "cost": "2 gp",
+      "weight": 2,
+      "description": "A glass container that holds 1.5 pints of liquid."
+    },
+    {
+      "name": "Bucket",
+      "cost": "5 cp",
+      "weight": 2,
+      "description": "Holds 3 gallons of liquid or half a cubic foot of solid material."
+    },
+    {
+      "name": "Caltrops (bag of 20)",
+      "cost": "1 gp",
+      "weight": 2,
+      "description": "As an action, you can spread caltrops to cover a 5-foot square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet."
+    },
+    {
+      "name": "Candle",
+      "cost": "1 cp",
+      "weight": 0,
+      "description": "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
+    },
+    {
+      "name": "Case, Crossbow Bolt",
+      "cost": "1 gp",
+      "weight": 1,
+      "description": "This wooden case holds up to 20 crossbow bolts."
+    },
+    {
+      "name": "Case, Map or Scroll",
+      "cost": "1 gp",
+      "weight": 1,
+      "description": "This cylindrical leather case holds up to 10 rolled-up sheets of paper or 5 rolled-up sheets of parchment."
+    },
+    {
+      "name": "Chain (10 feet)",
+      "cost": "5 gp",
+      "weight": 10,
+      "description": "A chain has AC 19 and 10 hit points. It can be burst with a successful DC 20 Strength check."
+    },
+    {
+      "name": "Chalk (1 piece)",
+      "cost": "1 cp",
+      "weight": 0,
+      "description": "A piece of chalk for marking surfaces."
+    },
+    {
+      "name": "Chest",
+      "cost": "5 gp",
+      "weight": 25,
+      "description": "Holds 12 cubic feet or 300 pounds of gear."
+    },
+    {
+      "name": "Climber's Kit",
+      "cost": "25 gp",
+      "weight": 12,
+      "description": "Includes pitons, boot tips, gloves, and a harness. You can anchor yourself as an action; while anchored, you can't fall more than 25 feet from the anchor point and can't climb more than 25 feet away from it."
+    },
+    {
+      "name": "Clothes, Common",
+      "cost": "5 sp",
+      "weight": 3,
+      "description": "Basic, functional clothing worn by commoners."
+    },
+    {
+      "name": "Clothes, Costume",
+      "cost": "5 gp",
+      "weight": 4,
+      "description": "Clothing designed for theatrical performances or disguises."
+    },
+    {
+      "name": "Clothes, Fine",
+      "cost": "15 gp",
+      "weight": 6,
+      "description": "Elegant clothing suitable for nobles and wealthy individuals."
+    },
+    {
+      "name": "Clothes, Traveler's",
+      "cost": "2 gp",
+      "weight": 4,
+      "description": "Durable clothing designed for travel and outdoor activities."
+    },
+    {
+      "name": "Component Pouch",
+      "cost": "25 gp",
+      "weight": 2,
+      "description": "A small, watertight leather belt pouch containing the material components and other special items you need to cast your spells."
+    },
+    {
+      "name": "Crowbar",
+      "cost": "2 gp",
+      "weight": 5,
+      "description": "Using a crowbar grants advantage on Strength checks where the crowbar's leverage can be applied."
+    },
+    {
+      "name": "Druidic Focus, Sprig of Mistletoe",
+      "cost": "1 gp",
+      "weight": 0,
+      "description": "A sprig of mistletoe used as a spellcasting focus for druid spells."
+    },
+    {
+      "name": "Druidic Focus, Totem",
+      "cost": "1 gp",
+      "weight": 0,
+      "description": "A totem object incorporating feathers, fur, bones, and teeth from sacred animals."
+    },
+    {
+      "name": "Druidic Focus, Wooden Staff",
+      "cost": "5 gp",
+      "weight": 4,
+      "description": "A wooden staff used as a spellcasting focus for druid spells."
+    },
+    {
+      "name": "Druidic Focus, Yew Wand",
+      "cost": "10 gp",
+      "weight": 1,
+      "description": "A yew wand used as a spellcasting focus for druid spells."
+    },
+    {
+      "name": "Fishing Tackle",
+      "cost": "1 gp",
+      "weight": 4,
+      "description": "Includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
+    },
+    {
+      "name": "Flask or Tankard",
+      "cost": "2 cp",
+      "weight": 1,
+      "description": "A container that holds 1 pint of liquid."
+    },
+    {
+      "name": "Grappling Hook",
+      "cost": "2 gp",
+      "weight": 4,
+      "description": "A metal hook designed to be attached to a rope for climbing or grabbing objects."
+    },
+    {
+      "name": "Hammer",
+      "cost": "1 gp",
+      "weight": 3,
+      "description": "A standard hammer for general use."
+    },
+    {
+      "name": "Hammer, Sledge",
+      "cost": "2 gp",
+      "weight": 10,
+      "description": "A large, heavy hammer for breaking objects."
+    },
+    {
+      "name": "Healer's Kit",
+      "cost": "5 gp",
+      "weight": 3,
+      "description": "This kit has 10 uses. As an action, you can expend one use to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+    },
+    {
+      "name": "Holy Symbol, Amulet",
+      "cost": "5 gp",
+      "weight": 1,
+      "description": "A holy symbol worn as an amulet, used as a spellcasting focus for divine spells."
+    },
+    {
+      "name": "Holy Symbol, Emblem",
+      "cost": "5 gp",
+      "weight": 0,
+      "description": "A holy symbol emblazoned on a shield or worn as a crest."
+    },
+    {
+      "name": "Holy Symbol, Reliquary",
+      "cost": "5 gp",
+      "weight": 2,
+      "description": "A holy symbol in the form of a small container holding a sacred relic."
+    },
+    {
+      "name": "Holy Water (flask)",
+      "cost": "25 gp",
+      "weight": 1,
+      "description": "As an action, you can splash the contents onto a creature within 5 feet or throw it up to 20 feet, shattering on impact. Make a ranged attack, treating it as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage."
+    },
+    {
+      "name": "Hourglass",
+      "cost": "25 gp",
+      "weight": 1,
+      "description": "A device for measuring time."
+    },
+    {
+      "name": "Hunting Trap",
+      "cost": "5 gp",
+      "weight": 25,
+      "description": "When you use your action to set it, it forms a saw-toothed steel ring that snaps shut when a creature steps on it. A creature that steps on the trap must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving."
+    },
+    {
+      "name": "Ink (1 ounce bottle)",
+      "cost": "10 gp",
+      "weight": 0,
+      "description": "A bottle of ink for writing."
+    },
+    {
+      "name": "Ink Pen",
+      "cost": "2 cp",
+      "weight": 0,
+      "description": "A pen for writing with ink."
+    },
+    {
+      "name": "Jug or Pitcher",
+      "cost": "2 cp",
+      "weight": 4,
+      "description": "A container that holds 1 gallon of liquid."
+    },
+    {
+      "name": "Ladder (10-foot)",
+      "cost": "1 sp",
+      "weight": 25,
+      "description": "A 10-foot wooden ladder."
+    },
+    {
+      "name": "Lamp",
+      "cost": "5 sp",
+      "weight": 1,
+      "description": "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+    },
+    {
+      "name": "Lantern, Bullseye",
+      "cost": "10 gp",
+      "weight": 2,
+      "description": "A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+    },
+    {
+      "name": "Lantern, Hooded",
+      "cost": "5 gp",
+      "weight": 2,
+      "description": "A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
+    },
+    {
+      "name": "Lock",
+      "cost": "10 gp",
+      "weight": 1,
+      "description": "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check."
+    },
+    {
+      "name": "Magnifying Glass",
+      "cost": "100 gp",
+      "weight": 0,
+      "description": "This lens allows a closer look at small objects. It grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed. Lighting a fire with a magnifying glass requires light as bright as sunlight, tinder to ignite, and about 5 minutes."
+    },
+    {
+      "name": "Manacles",
+      "cost": "2 gp",
+      "weight": 6,
+      "description": "These metal restraints can bind a Small or Medium creature. Escaping them requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set comes with one key."
+    },
+    {
+      "name": "Mess Kit",
+      "cost": "2 sp",
+      "weight": 1,
+      "description": "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan while the other is a plate or shallow bowl."
+    },
+    {
+      "name": "Mirror, Steel",
+      "cost": "5 gp",
+      "weight": 0.5,
+      "description": "A polished steel mirror."
+    },
+    {
+      "name": "Oil (flask)",
+      "cost": "1 sp",
+      "weight": 1,
+      "description": "Oil usually comes in a clay flask. As an action, you can splash the oil onto a creature within 5 feet or throw it up to 20 feet, shattering on impact. Make a ranged attack against a target. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil."
+    },
+    {
+      "name": "Paper (one sheet)",
+      "cost": "2 sp",
+      "weight": 0,
+      "description": "A single sheet of paper."
+    },
+    {
+      "name": "Parchment (one sheet)",
+      "cost": "1 sp",
+      "weight": 0,
+      "description": "A single sheet of parchment, more durable than paper."
+    },
+    {
+      "name": "Perfume (vial)",
+      "cost": "5 gp",
+      "weight": 0,
+      "description": "A vial of fragrant perfume."
+    },
+    {
+      "name": "Pick, Miner's",
+      "cost": "2 gp",
+      "weight": 10,
+      "description": "A pick for mining and breaking rock."
+    },
+    {
+      "name": "Piton",
+      "cost": "5 cp",
+      "weight": 0.25,
+      "description": "A metal spike used for climbing."
+    },
+    {
+      "name": "Poison, Basic (vial)",
+      "cost": "100 gp",
+      "weight": 0,
+      "description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+    },
+    {
+      "name": "Pole (10-foot)",
+      "cost": "5 cp",
+      "weight": 7,
+      "description": "A 10-foot wooden pole, useful for probing ahead."
+    },
+    {
+      "name": "Pot, Iron",
+      "cost": "2 gp",
+      "weight": 10,
+      "description": "An iron pot that holds 1 gallon of liquid."
+    },
+    {
+      "name": "Potion of Healing",
+      "cost": "50 gp",
+      "weight": 0.5,
+      "description": "You regain 2d4+2 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+    },
+    {
+      "name": "Pouch",
+      "cost": "5 sp",
+      "weight": 1,
+      "description": "A cloth or leather pouch that holds up to 1/5 cubic foot or 6 pounds of gear."
+    },
+    {
+      "name": "Quiver",
+      "cost": "1 gp",
+      "weight": 1,
+      "description": "A quiver can hold up to 20 arrows."
+    },
+    {
+      "name": "Ram, Portable",
+      "cost": "4 gp",
+      "weight": 35,
+      "description": "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+    },
+    {
+      "name": "Rations (1 day)",
+      "cost": "5 sp",
+      "weight": 2,
+      "description": "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+    },
+    {
+      "name": "Robes",
+      "cost": "1 gp",
+      "weight": 4,
+      "description": "Simple robes, often worn by spellcasters or religious figures."
+    },
+    {
+      "name": "Rope, Hempen (50 feet)",
+      "cost": "1 gp",
+      "weight": 10,
+      "description": "Hempen rope has 2 hit points and can be burst with a DC 17 Strength check."
+    },
+    {
+      "name": "Rope, Silk (50 feet)",
+      "cost": "10 gp",
+      "weight": 5,
+      "description": "Silk rope has 2 hit points and can be burst with a DC 17 Strength check."
+    },
+    {
+      "name": "Sack",
+      "cost": "1 cp",
+      "weight": 0.5,
+      "description": "A cloth sack that holds up to 1 cubic foot or 30 pounds of gear."
+    },
+    {
+      "name": "Scale, Merchant's",
+      "cost": "5 gp",
+      "weight": 3,
+      "description": "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods."
+    },
+    {
+      "name": "Sealing Wax",
+      "cost": "5 sp",
+      "weight": 0,
+      "description": "Wax used to seal letters and documents."
+    },
+    {
+      "name": "Shovel",
+      "cost": "2 gp",
+      "weight": 5,
+      "description": "A tool for digging."
+    },
+    {
+      "name": "Signal Whistle",
+      "cost": "5 cp",
+      "weight": 0,
+      "description": "A small whistle for signaling."
+    },
+    {
+      "name": "Signet Ring",
+      "cost": "5 gp",
+      "weight": 0,
+      "description": "A ring with a personal or family seal."
+    },
+    {
+      "name": "Soap",
+      "cost": "2 cp",
+      "weight": 0,
+      "description": "A bar of soap."
+    },
+    {
+      "name": "Spellbook",
+      "cost": "50 gp",
+      "weight": 3,
+      "description": "Essential for wizards, this leather-bound tome has 100 blank vellum pages suitable for recording spells."
+    },
+    {
+      "name": "Spikes, Iron (10)",
+      "cost": "1 gp",
+      "weight": 5,
+      "description": "Iron spikes for securing ropes, jamming doors, or other purposes."
+    },
+    {
+      "name": "Spyglass",
+      "cost": "1,000 gp",
+      "weight": 1,
+      "description": "Objects viewed through a spyglass are magnified to twice their size."
+    },
+    {
+      "name": "Tent, Two-Person",
+      "cost": "2 gp",
+      "weight": 20,
+      "description": "A simple and portable canvas shelter for two people."
+    },
+    {
+      "name": "Tinderbox",
+      "cost": "5 sp",
+      "weight": 1,
+      "description": "This small container holds flint, fire steel, and tinder used to kindle a fire. Using it to light a torch takes an action. Lighting any other fire takes 1 minute."
+    },
+    {
+      "name": "Torch",
+      "cost": "1 cp",
+      "weight": 1,
+      "description": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
+    },
+    {
+      "name": "Vial",
+      "cost": "1 gp",
+      "weight": 0,
+      "description": "A small glass container that holds 4 ounces of liquid."
+    },
+    {
+      "name": "Waterskin",
+      "cost": "2 sp",
+      "weight": 5,
+      "description": "A leather pouch that holds up to 4 pints of liquid when full."
+    },
+    {
+      "name": "Whetstone",
+      "cost": "1 cp",
+      "weight": 1,
+      "description": "A stone used for sharpening bladed weapons."
+    }
+  ]
+}

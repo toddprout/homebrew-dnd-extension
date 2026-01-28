@@ -1,0 +1,123 @@
+{
+  "name": "Armor",
+  "description": "Light, medium, heavy armor and shields from the SRD",
+  "items": [
+    {
+      "name": "Padded",
+      "type": "Light Armor",
+      "cost": "5 gp",
+      "armor_class": "11 + Dex modifier",
+      "strength": null,
+      "stealth": "Disadvantage",
+      "weight": 8
+    },
+    {
+      "name": "Leather",
+      "type": "Light Armor",
+      "cost": "10 gp",
+      "armor_class": "11 + Dex modifier",
+      "strength": null,
+      "stealth": null,
+      "weight": 10
+    },
+    {
+      "name": "Studded Leather",
+      "type": "Light Armor",
+      "cost": "45 gp",
+      "armor_class": "12 + Dex modifier",
+      "strength": null,
+      "stealth": null,
+      "weight": 13
+    },
+    {
+      "name": "Hide",
+      "type": "Medium Armor",
+      "cost": "10 gp",
+      "armor_class": "12 + Dex modifier (max 2)",
+      "strength": null,
+      "stealth": null,
+      "weight": 12
+    },
+    {
+      "name": "Chain Shirt",
+      "type": "Medium Armor",
+      "cost": "50 gp",
+      "armor_class": "13 + Dex modifier (max 2)",
+      "strength": null,
+      "stealth": null,
+      "weight": 20
+    },
+    {
+      "name": "Scale Mail",
+      "type": "Medium Armor",
+      "cost": "50 gp",
+      "armor_class": "14 + Dex modifier (max 2)",
+      "strength": null,
+      "stealth": "Disadvantage",
+      "weight": 45
+    },
+    {
+      "name": "Breastplate",
+      "type": "Medium Armor",
+      "cost": "400 gp",
+      "armor_class": "14 + Dex modifier (max 2)",
+      "strength": null,
+      "stealth": null,
+      "weight": 20
+    },
+    {
+      "name": "Half Plate",
+      "type": "Medium Armor",
+      "cost": "750 gp",
+      "armor_class": "15 + Dex modifier (max 2)",
+      "strength": null,
+      "stealth": "Disadvantage",
+      "weight": 40
+    },
+    {
+      "name": "Ring Mail",
+      "type": "Heavy Armor",
+      "cost": "30 gp",
+      "armor_class": "14",
+      "strength": null,
+      "stealth": "Disadvantage",
+      "weight": 40
+    },
+    {
+      "name": "Chain Mail",
+      "type": "Heavy Armor",
+      "cost": "75 gp",
+      "armor_class": "16",
+      "strength": "Str 13",
+      "stealth": "Disadvantage",
+      "weight": 55
+    },
+    {
+      "name": "Splint",
+      "type": "Heavy Armor",
+      "cost": "200 gp",
+      "armor_class": "17",
+      "strength": "Str 15",
+      "stealth": "Disadvantage",
+      "weight": 60
+    },
+    {
+      "name": "Plate",
+      "type": "Heavy Armor",
+      "cost": "1,500 gp",
+      "armor_class": "18",
+      "strength": "Str 15",
+      "stealth": "Disadvantage",
+      "weight": 65
+    },
+    {
+      "name": "Shield",
+      "type": "Shield",
+      "cost": "10 gp",
+      "armor_class": "+2",
+      "strength": null,
+      "stealth": null,
+      "weight": 6
+    }
+  ]
+}

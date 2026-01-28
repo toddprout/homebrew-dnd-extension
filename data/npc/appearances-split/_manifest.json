@@ -1,0 +1,21 @@
+{
+  "originalFile": "appearances.json",
+  "splitDate": "2026-01-28T04:35:35.408Z",
+  "totalItems": 2538021,
+  "totalChunks": 8,
+  "wrapperKey": "hair",
+  "metadata": {
+    "name": "NPC Appearances",
+    "description": "Physical appearance descriptors for NPCs"
+  },
+  "chunks": [
+    "appearances-001.json",
+    "appearances-002.json",
+    "appearances-003.json",
+    "appearances-004.json",
+    "appearances-005.json",
+    "appearances-006.json",
+    "appearances-007.json",
+    "appearances-008.json"
+  ]
+}
