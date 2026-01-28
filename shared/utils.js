@@ -8,12 +8,17 @@
 // ============================================
 
 /**
+ * GitHub Pages base URL for data files
+ */
+const DATA_BASE_URL = 'https://toddprout.github.io/homebrew-dnd-extension/data';
+
+/**
  * Cache for loaded data files
  */
 const dataCache = new Map();
 
 /**
- * Load a JSON data file from the extension's data folder
+ * Load a JSON data file from GitHub Pages
  * @param {string} filename - Name of the JSON file (e.g., 'weapons.json')
  * @returns {Promise<any>} Parsed JSON data
  */
@@ -24,7 +29,7 @@ async function loadData(filename) {
   }
   
   try {
-    const url = chrome.runtime.getURL(`data/${filename}`);
+    const url = `${DATA_BASE_URL}/${filename}`;
     const response = await fetch(url);
     
     if (!response.ok) {

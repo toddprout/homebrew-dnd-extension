@@ -7,36 +7,139 @@
 // DATA LOADING
 // ============================================
 
+/**
+ * GitHub Pages base URL for NPC data files
+ */
+const NPC_DATA_BASE_URL = 'https://toddprout.github.io/homebrew-dnd-extension/data/npc';
+
 let npcData = null;
+
+/**
+ * Load a single JSON file from GitHub
+ */
+async function loadNPCFile(filename) {
+  try {
+    const url = `${NPC_DATA_BASE_URL}/${filename}`;
+    const response = await fetch(url);
+    if (response.ok) {
+      return await response.json();
+    }
+  } catch (error) {
+    console.error(`Failed to load ${filename}:`, error);
+  }
+  return null;
+}
+
+/**
+ * Load split files and merge them
+ * @param {string} baseName - Base name like 'appearances' or 'personalities'
+ * @returns {Promise<object>} Merged data object
+ */
+async function loadSplitFiles(baseName) {
+  try {
+    // First, load the manifest
+    const manifestUrl = `${NPC_DATA_BASE_URL}/${baseName}-split/_manifest.json`;
+    const manifestResponse = await fetch(manifestUrl);
+    
+    if (!manifestResponse.ok) {
+      console.warn(`No split files found for ${baseName}, trying single file`);
+      return await loadNPCFile(`${baseName}.json`);
+    }
+    
+    const manifest = await manifestResponse.json();
+    
+    // Load all chunk files in parallel
+    const chunkPromises = manifest.chunks.map(async (chunkName) => {
+      const chunkFileName = typeof chunkName === 'string' ? chunkName : chunkName.name;
+      const url = `${NPC_DATA_BASE_URL}/${baseName}-split/${chunkFileName}`;
+      const response = await fetch(url);
+      if (response.ok) {
+        return await response.json();
+      }
+      return null;
+    });
+    
+    const chunks = await Promise.all(chunkPromises);
+    const validChunks = chunks.filter(c => c !== null);
+    
+    if (validChunks.length === 0) {
+      console.error(`No valid chunks loaded for ${baseName}`);
+      return null;
+    }
+    
+    // Merge chunks based on structure
+    if (manifest.structure === 'multi-array') {
+      // Multiple arrays - merge each array key
+      const merged = {};
+      if (manifest.metadata) {
+        Object.assign(merged, manifest.metadata);
+      }
+      
+      for (const chunk of validChunks) {
+        for (const [key, value] of Object.entries(chunk)) {
+          if (Array.isArray(value)) {
+            if (!merged[key]) {
+              merged[key] = [];
+            }
+            merged[key].push(...value);
+          } else if (key !== '_chunk' && key !== '_arrayKey' && key !== '_arrayPart') {
+            // Keep metadata from first chunk
+            if (!(key in merged)) {
+              merged[key] = value;
+            }
+          }
+        }
+      }
+      
+      return merged;
+    } else {
+      // Single array wrapped in object - merge the wrapper key
+      const wrapperKey = manifest.wrapperKey;
+      const merged = manifest.metadata ? { ...manifest.metadata } : {};
+      merged[wrapperKey] = [];
+      
+      for (const chunk of validChunks) {
+        if (chunk[wrapperKey]) {
+          merged[wrapperKey].push(...chunk[wrapperKey]);
+        }
+      }
+      
+      return merged;
+    }
+  } catch (error) {
+    console.error(`Error loading split files for ${baseName}:`, error);
+    return null;
+  }
+}
 
 async function loadNPCData() {
   if (npcData) return npcData;
   
-  const files = {
-    firstNames: 'npc/names-first.json',
-    lastNames: 'npc/names-last.json',
-    occupations: 'npc/occupations.json',
-    appearances: 'npc/appearances.json',
-    voices: 'npc/voices.json',
-    personalities: 'npc/personalities.json',
-    secrets: 'npc/secrets.json',
-    bonds: 'npc/bonds.json',
-    moods: 'npc/moods.json',
-    ages: 'npc/ages.json'
+  // Files that might be split
+  const splitFiles = ['appearances', 'personalities'];
+  
+  // Regular files (not split)
+  const regularFiles = {
+    firstNames: 'names-first.json',
+    lastNames: 'names-last.json',
+    occupations: 'occupations.json',
+    voices: 'voices.json',
+    secrets: 'secrets.json',
+    bonds: 'bonds.json',
+    moods: 'moods.json',
+    ages: 'ages.json'
   };
   
   const results = {};
   
-  for (const [key, filename] of Object.entries(files)) {
-    try {
-      const url = chrome.runtime.getURL(`data/${filename}`);
-      const response = await fetch(url);
-      if (response.ok) {
-        results[key] = await response.json();
-      }
-    } catch (error) {
-      console.error(`Failed to load ${filename}:`, error);
-    }
+  // Load regular files
+  for (const [key, filename] of Object.entries(regularFiles)) {
+    results[key] = await loadNPCFile(filename);
+  }
+  
+  // Load split files
+  for (const baseName of splitFiles) {
+    results[baseName] = await loadSplitFiles(baseName);
   }
   
   npcData = results;
