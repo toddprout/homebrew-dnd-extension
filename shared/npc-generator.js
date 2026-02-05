@@ -12,7 +12,12 @@
  */
 const NPC_DATA_BASE_URL = 'https://toddprout.github.io/homebrew-dnd-extension/data/npc';
 
-let npcData = null;
+// Cache for static data (names, occupations, etc.) - these don't need to change
+let staticNpcData = null;
+
+// Manifests for split files (so we know what chunks exist)
+let appearancesManifest = null;
+let personalitiesManifest = null;
 
 /**
  * Load a single JSON file from GitHub
@@ -31,94 +36,59 @@ async function loadNPCFile(filename) {
 }
 
 /**
- * Load split files and merge them
- * @param {string} baseName - Base name like 'appearances' or 'personalities'
- * @returns {Promise<object>} Merged data object
+ * Load manifest for split files
  */
-async function loadSplitFiles(baseName) {
+async function loadManifest(baseName) {
   try {
-    // First, load the manifest
-    const manifestUrl = `${NPC_DATA_BASE_URL}/${baseName}-split/_manifest.json`;
-    const manifestResponse = await fetch(manifestUrl);
-    
-    if (!manifestResponse.ok) {
-      console.warn(`No split files found for ${baseName}, trying single file`);
-      return await loadNPCFile(`${baseName}.json`);
-    }
-    
-    const manifest = await manifestResponse.json();
-    
-    // Load all chunk files in parallel
-    const chunkPromises = manifest.chunks.map(async (chunkName) => {
-      const chunkFileName = typeof chunkName === 'string' ? chunkName : chunkName.name;
-      const url = `${NPC_DATA_BASE_URL}/${baseName}-split/${chunkFileName}`;
-      const response = await fetch(url);
-      if (response.ok) {
-        return await response.json();
-      }
-      return null;
-    });
-    
-    const chunks = await Promise.all(chunkPromises);
-    const validChunks = chunks.filter(c => c !== null);
-    
-    if (validChunks.length === 0) {
-      console.error(`No valid chunks loaded for ${baseName}`);
-      return null;
-    }
-    
-    // Merge chunks based on structure
-    if (manifest.structure === 'multi-array') {
-      // Multiple arrays - merge each array key
-      const merged = {};
-      if (manifest.metadata) {
-        Object.assign(merged, manifest.metadata);
-      }
-      
-      for (const chunk of validChunks) {
-        for (const [key, value] of Object.entries(chunk)) {
-          if (Array.isArray(value)) {
-            if (!merged[key]) {
-              merged[key] = [];
-            }
-            merged[key].push(...value);
-          } else if (key !== '_chunk' && key !== '_arrayKey' && key !== '_arrayPart') {
-            // Keep metadata from first chunk
-            if (!(key in merged)) {
-              merged[key] = value;
-            }
-          }
-        }
-      }
-      
-      return merged;
-    } else {
-      // Single array wrapped in object - merge the wrapper key
-      const wrapperKey = manifest.wrapperKey;
-      const merged = manifest.metadata ? { ...manifest.metadata } : {};
-      merged[wrapperKey] = [];
-      
-      for (const chunk of validChunks) {
-        if (chunk[wrapperKey]) {
-          merged[wrapperKey].push(...chunk[wrapperKey]);
-        }
-      }
-      
-      return merged;
+    const manifestUrl = `${NPC_DATA_BASE_URL}/${baseName}-split/manifest.json`;
+    const response = await fetch(manifestUrl);
+    if (response.ok) {
+      return await response.json();
     }
   } catch (error) {
-    console.error(`Error loading split files for ${baseName}:`, error);
-    return null;
+    console.warn(`No manifest found for ${baseName}`);
   }
+  return null;
 }
 
-async function loadNPCData() {
-  if (npcData) return npcData;
+/**
+ * Load a random chunk from split files
+ */
+async function loadRandomChunk(baseName, manifest) {
+  if (!manifest || !manifest.chunks || manifest.chunks.length === 0) {
+    // Try loading single file as fallback
+    return await loadNPCFile(`${baseName}.json`);
+  }
   
-  // Files that might be split
-  const splitFiles = ['appearances', 'personalities'];
+  // Randomly pick a chunk
+  const randomIndex = Math.floor(Math.random() * manifest.chunks.length);
+  const chunkName = manifest.chunks[randomIndex];
+  const chunkFileName = typeof chunkName === 'string' ? chunkName : chunkName.name;
   
-  // Regular files (not split)
+  const url = `${NPC_DATA_BASE_URL}/${baseName}-split/${chunkFileName}`;
+  const response = await fetch(url);
+  
+  if (!response.ok) {
+    console.error(`Failed to load chunk ${chunkFileName}`);
+    return null;
+  }
+  
+  const chunkData = await response.json();
+  
+  // Remove chunk metadata
+  delete chunkData._chunk;
+  delete chunkData._arrayKey;
+  delete chunkData._arrayPart;
+  
+  return chunkData;
+}
+
+/**
+ * Load static NPC data (names, occupations, etc.) - cached
+ */
+async function loadStaticNPCData() {
+  if (staticNpcData) return staticNpcData;
+  
   const regularFiles = {
     firstNames: 'names-first.json',
     lastNames: 'names-last.json',
@@ -133,17 +103,37 @@ async function loadNPCData() {
   const results = {};
   
   // Load regular files
-  for (const [key, filename] of Object.entries(regularFiles)) {
-    results[key] = await loadNPCFile(filename);
-  }
+  await Promise.all(
+    Object.entries(regularFiles).map(async ([key, filename]) => {
+      results[key] = await loadNPCFile(filename);
+    })
+  );
   
-  // Load split files
-  for (const baseName of splitFiles) {
-    results[baseName] = await loadSplitFiles(baseName);
-  }
+  // Load manifests for split files
+  appearancesManifest = await loadManifest('appearances');
+  personalitiesManifest = await loadManifest('personalities');
   
-  npcData = results;
-  return npcData;
+  staticNpcData = results;
+  return staticNpcData;
+}
+
+/**
+ * Load fresh appearances and personalities data (random chunks)
+ */
+async function loadFreshVariableData() {
+  const [appearances, personalities] = await Promise.all([
+    loadRandomChunk('appearances', appearancesManifest),
+    loadRandomChunk('personalities', personalitiesManifest)
+  ]);
+  
+  return { appearances, personalities };
+}
+
+// Legacy function for compatibility
+async function loadNPCData() {
+  const staticData = await loadStaticNPCData();
+  const variableData = await loadFreshVariableData();
+  return { ...staticData, ...variableData };
 }
 
 // ============================================
@@ -376,7 +366,10 @@ function generateMood(data) {
  * @param {object} quirksData - Existing quirks data from main data load
  */
 async function generateNPC(options = {}, quirksData = null) {
-  const data = await loadNPCData();
+  // Load static data (cached) and fresh variable data (new random chunks each time)
+  const staticData = await loadStaticNPCData();
+  const variableData = await loadFreshVariableData();
+  const data = { ...staticData, ...variableData };
   
   const locked = options.locked || {};
   const detail = options.detail || 'standard';

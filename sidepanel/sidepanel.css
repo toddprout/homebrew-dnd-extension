@@ -387,7 +387,8 @@ body {
 }
 
 .table-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
   align-items: center;
   gap: var(--spacing-md);
   padding: var(--spacing-md);
@@ -408,7 +409,8 @@ body {
 }
 
 .table-info {
-  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .table-info h3 {
@@ -416,6 +418,8 @@ body {
   font-size: 1rem;
   color: var(--text-primary);
   margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table-info p {
@@ -432,6 +436,7 @@ body {
 
 .roll-table-btn {
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* Table Result Display */

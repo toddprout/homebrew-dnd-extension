@@ -499,7 +499,7 @@ function rollCustomDice(notation) {
       resultEl.classList.remove('rolling');
       
       let notationText = notation;
-      if (result.rolls.length > 1) {
+      if (result.rolls.length > 1 || result.modifier !== 0) {
         notationText += ` = ${result.rolls.join(' + ')}`;
         if (result.modifier !== 0) {
           notationText += ` ${result.modifier > 0 ? '+' : ''}${result.modifier}`;
