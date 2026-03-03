@@ -1,4 +1,42 @@
-npc/personalities.json
-npc/appearances.json
-data/npc/appearances.json
+# Original large files (before splitting)
 data/npc/personalities.json
+data/npc/appearances.json
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Extension files (keep locally, upload to Chrome Web Store)
+# Note: /manifest.json uses a leading slash so it only matches the ROOT-level
+# Chrome extension manifest — NOT data/npc/*/manifest.json split manifests.
+/manifest.json
+background.js
+popup/
+sidepanel/
+shared/
+icons/
+styles/
+scripts/
+
+# Chrome Web Store assets (keep locally)
+chrome-store-images/
+chrome-store-justifications.txt
+homebrewdnd-logo-128x128.png
+
+# Packaged extension zip (never commit binaries)
+*.zip
+
+# Development scripts at root level (not needed in GitHub)
+format_names.js
+generate_appearances.js
+generate_last_names.js
+generate_names.js
+generate_personalities.js
+split-large-json.js
+
+# Documentation (keep locally)
+ADDING-TABLES.md
+
+# Only data/, README.md, and .gitignore belong on GitHub.
+# data/ is served via GitHub Pages as the extension's CDN.
+# Everything else is for local development and Chrome Web Store packaging only.

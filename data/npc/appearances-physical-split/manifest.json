@@ -1,0 +1,16 @@
+{
+  "description": "Physical appearance split files (build, face, eyes, distinguishing)",
+  "generatedAt": "2026-03-03T03:43:47.111Z",
+  "totalChunks": 8,
+  "entriesPerCategory": 100,
+  "chunks": [
+    "appearances-physical-001.json",
+    "appearances-physical-002.json",
+    "appearances-physical-003.json",
+    "appearances-physical-004.json",
+    "appearances-physical-005.json",
+    "appearances-physical-006.json",
+    "appearances-physical-007.json",
+    "appearances-physical-008.json"
+  ]
+}
