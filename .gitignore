@@ -40,3 +40,6 @@ ADDING-TABLES.md
 # Only data/, README.md, and .gitignore belong on GitHub.
 # data/ is served via GitHub Pages as the extension's CDN.
 # Everything else is for local development and Chrome Web Store packaging only.
+
+# Stuff we just dont need in github and was used for making the extension
+Magic_Items_2024.xlsx
