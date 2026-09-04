@@ -17,6 +17,7 @@ shared/
 icons/
 styles/
 scripts/
+assets/
 
 # Chrome Web Store assets (keep locally)
 chrome-store-images/
