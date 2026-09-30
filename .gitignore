@@ -22,6 +22,7 @@ assets/
 # Chrome Web Store assets (keep locally)
 chrome-store-images/
 chrome-store-justifications.txt
+chrome-store-description.txt
 homebrewdnd-logo-128x128.png
 
 # Packaged extension zip (never commit binaries)
@@ -44,3 +45,4 @@ ADDING-TABLES.md
 
 # Stuff we just dont need in github and was used for making the extension
 Magic_Items_2024.xlsx
+DnD_5.5e_2024_and_5e_2014_Spells.xlsx
